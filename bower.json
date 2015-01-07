@@ -12,7 +12,7 @@
     "colors"
   ],
   "license": "Apache 2",
-  "homepage": "https://github.sw.ge.com/jrogerson/pdx-colors.git",
+  "homepage": "git@github.sw.ge.com:jrogerson/pdx-colors.git",
   "private": true,
   "ignore": [
     "**/.*",
