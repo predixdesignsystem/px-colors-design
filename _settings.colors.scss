@@ -54,6 +54,19 @@ $gray-dark      : rgb(87,87,87);
 $gray           : rgb(134,134,134);
 $gray-light     : rgb(188,188,188);
 $gray-lighter   : rgb(212,212,212);
-$grey-lightest  : rgb(233,233,233);
+$gray-lightest  : rgb(233,233,233);
 $off-white      : rgb(245,245,245);
 $white          : rgb(255,255,255);
+
+
+.status--warning {
+  color: $red;
+}
+
+.status--alert {
+  color: $blue;
+}
+
+.status--clear {
+  color: $green;
+}
