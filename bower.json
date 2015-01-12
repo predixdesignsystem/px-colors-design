@@ -1,10 +1,10 @@
 {
-  "name": "pdx-colors",
+  "name": "px-colors",
   "version": "0.0.1",
   "authors": [
     "General Electric"
   ],
-  "description": "Color settings for Predix Design Extension",
+  "description": "Color settings for Predix Experience",
   "main": "_settings.colors.scss",
   "keywords": [
     "sass",
@@ -12,7 +12,7 @@
     "colors"
   ],
   "license": "Apache 2",
-  "homepage": "git@github.sw.ge.com:jrogerson/pdx-colors.git",
+  "homepage": "git://github.sw.ge.com/jrogerson/px-colors.git",
   "private": true,
   "ignore": [
     "**/.*",

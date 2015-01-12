@@ -1,4 +1,4 @@
-pdx-colors
+px-colors
 ==========
 
-Color settings for Predix Design Extension
+Color settings for Predix Experience
