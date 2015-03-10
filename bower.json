@@ -4,7 +4,7 @@
   "authors": [
     "General Electric"
   ],
-  "description": "Color settings for Predix Experience",
+  "description": "GE color palette",
   "main": "_settings.colors.scss",
   "keywords": [
     "sass",

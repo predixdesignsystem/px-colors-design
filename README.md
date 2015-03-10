@@ -1,6 +1,6 @@
 # Colors
 
-The Colors module assigns Sass variables to the Predix Experience color palette.
+The Colors module assigns Sass variables to the GE color palette.
 
 ## Installation
 
