@@ -12,7 +12,7 @@
     "colors"
   ],
   "license": "Apache 2",
-  "homepage": "git://github.sw.ge.com/pxc/px-colors-design.git",
+  "homepage": "git://github.sw.ge.com/PXd/px-colors-design.git",
   "private": true,
   "ignore": [
     "**/.*",
