@@ -1,10 +1,10 @@
 {
   "name": "px-colors-design",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "authors": [
     "General Electric"
   ],
-  "description": "GE color palette",
+  "description": "PX color palette",
   "main": "_settings.colors.scss",
   "keywords": [
     "sass",

@@ -1,6 +1,6 @@
 # Colors
 
-The Colors module assigns Sass variables to the GE color palette.
+The Colors module assigns Sass variables to the PX color palette.
 
 ## Installation
 
