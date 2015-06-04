@@ -1,6 +1,6 @@
 {
   "name": "px-colors-design",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "authors": [
     "General Electric"
   ],
@@ -12,7 +12,7 @@
     "colors"
   ],
   "license": "Apache 2",
-  "homepage": "git://github.sw.ge.com/PXd/px-colors-design.git",
+  "homepage": "git://github.build.ge.com/PXd/px-colors-design.git",
   "private": true,
   "ignore": [
     "**/.*",
