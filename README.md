@@ -10,6 +10,4 @@ Install this module using bower:
 
 Once installed, `@import` into your project's Sass file in its Settings layer:
 
-    @import "../px-colors-design/settings.colors";
-
-See [px-getting-started](https://github.build.ge.com/PXd/px-getting-started#a-note-about-relative-import-paths) for an explanation of the `../`
+    @import "px-colors-design/_settings.colors.scss";
