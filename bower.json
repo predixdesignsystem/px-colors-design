@@ -1,6 +1,6 @@
 {
   "name": "px-colors-design",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "authors": [
     "General Electric"
   ],
@@ -13,7 +13,7 @@
   ],
   "license": "Apache 2",
   "homepage": "https://github.com/PredixDev/px-colors-design.git",
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
