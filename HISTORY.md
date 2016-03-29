@@ -1,3 +1,7 @@
+v0.2.13
+==============================
+* Fixed a variable type in the py file which lead to an incorrect var name in the html
+
 v0.2.12
 ==============================
 * Created a python converter to consume the SCSS and generate a HTML with the colors as Polymer Properties.

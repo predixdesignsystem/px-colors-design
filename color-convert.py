@@ -46,7 +46,7 @@ def convertFile():
         js.write('{:<4}{}'.format('','* Format: Object\n'))
         js.write('{:<4}{}'.format('','*/\n'))
 
-        js.write('{:<4}{}'.format('','tdataVisColors:{\n'))
+        js.write('{:<4}{}'.format('','dataVisColors:{\n'))
         js.write('{:<6}{}'.format('','type:Object,\n'))
         js.write('{:<6}{}'.format('','value:'))
         js.write(json.dumps(dvColors,indent=8, separators=(',', ': ')))
