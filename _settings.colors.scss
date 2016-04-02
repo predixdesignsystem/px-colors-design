@@ -59,6 +59,21 @@ $white                          : rgb(255,255,255);
 $graybg                         : rgb(139,141,143);
 
 /**
+ * Define grey = gray to avoid dev typos
+ */
+$grey10                         : $gray10;
+$grey9                          : $gray9;
+$grey8                          : $gray8;
+$grey7                          : $gray7;
+$grey6                          : $gray6;
+$grey5                          : $gray5;
+$grey4                          : $gray4;
+$grey3                          : $gray3;
+$grey2                          : $gray2;
+$grey1                          : $gray1;
+$greybg                         : $graybg;
+
+/**
  * Buttons
  */
 
@@ -100,6 +115,7 @@ $alert-blue                     : rgb(67,100,221);
     $dv-basic-yellow                : rgb(222,207,63);
     $dv-basic-red                   : rgb(241,88,84);
     $dv-basic-gray                  : rgb(77,77,77);
+    $dv-basic-grey                  : $dv-basic-gray;
 
     /**
      * Light
@@ -114,6 +130,7 @@ $alert-blue                     : rgb(67,100,221);
     $dv-light-yellow                : rgb(237,221,70);
     $dv-light-red                   : rgb(240,126,110);
     $dv-light-gray                  : rgb(140,140,140);
+    $dv-light-grey                  : $dv-light-gray;
 
     /**
      * Dark
@@ -128,3 +145,4 @@ $alert-blue                     : rgb(67,100,221);
     $dv-dark-yellow                 : rgb(199,180,46);
     $dv-dark-red                    : rgb(203,32,39);
     $dv-dark-gray                   : $black;
+    $dv-dark-grey                   : $dv-dark-gray;

@@ -1,3 +1,7 @@
+v0.2.14
+==============================
+* Created variable set "grey" which is equal to "gray" to avoid developer typos.
+
 v0.2.13
 ==============================
 * Fixed a variable type in the py file which lead to an incorrect var name in the html
