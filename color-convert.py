@@ -44,7 +44,7 @@ def convertFile():
 
     with open(sys.argv[2], 'w') as js:
         js.write('<script>\n')
-        js.write('/*\nName:\ncommonColors\n\nDescription:\n\nPolymer behavior that provides the basic color definitions. Colors match (and are generated from) px-colors-design SCSS.\nThis allows access to the color definitions in javascript for applications where CSS is not ideal.\n\nDependencies:\n- none\n\n*/\n\n')
+        js.write('/*\nName:\ncommonColors\n\nDescription:\n\nPolymer behavior that provides the basic color definitions. Colors match (and are generated from) px-colors-design SCSS.\nThis allows access to the color definitions in javascript for applications where CSS is not ideal.\n\nDependencies:\n- none\n\n@polymerBehavior commonColors\n\n*/\n\n')
         js.write('var commonColors = {\n\n')
         js.write('{:<2}{}'.format('','properties: {\n'))
 

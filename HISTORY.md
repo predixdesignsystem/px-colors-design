@@ -1,3 +1,7 @@
+v0.2.15
+==============================
+* added @polymerBehavior to the behavior for proper polymer docs behavior
+
 v0.2.14
 ==============================
 * Created variable set "grey" which is equal to "gray" to avoid developer typos.
