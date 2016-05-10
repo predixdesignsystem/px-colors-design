@@ -1,3 +1,7 @@
+v0.2.16
+==============================
+* updated README
+
 v0.2.15
 ==============================
 * added @polymerBehavior to the behavior for proper polymer docs behavior

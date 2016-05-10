@@ -6,7 +6,7 @@ The Colors module assigns Sass variables to the PX color palette.
 
 Install this module using bower:
 
-    bower install --save https://github.com/PredixDev/px-colors-design.git
+    bower install --save px-colors-design
 
 Once installed, `@import` into your project's Sass file in its Settings layer:
 
@@ -14,9 +14,9 @@ Once installed, `@import` into your project's Sass file in its Settings layer:
 
 
 ## Behavior
-Install this as a Polymer behavior:
+This component can also be installed as a Polymer behavior:
 
-    bower install --save https://github.com/PredixDev/px-colors-design.git
+    bower install --save px-colors-design
 
 Then reference it in your project
 
@@ -29,3 +29,5 @@ And add the variable as a behavior
         is: 'px-my-component',
         behaviors: [commonColors],
         ...
+      });
+    </script>
