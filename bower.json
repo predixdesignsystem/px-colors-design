@@ -1,6 +1,6 @@
 {
   "name": "px-colors-design",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "authors": [
     "General Electric"
   ],
@@ -17,7 +17,12 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
-  ]
+    "sass",
+    ".github",
+    "OSS_Notice.pdf"
+  ],
+  "devDependencies": {
+    "px-sass-doc": "~0.1.7",
+    "px-starter-kit-design": "~0.6.0"
+  }
 }

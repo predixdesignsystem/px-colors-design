@@ -1,3 +1,8 @@
+v0.2.17
+==============================
+* added new demo and auto-ghp
+* added missing dark-grey to behavior
+
 v0.2.16
 ==============================
 * updated README
