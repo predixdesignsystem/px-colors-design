@@ -1,3 +1,7 @@
+v0.2.18
+==============================
+* fixed demo for Travis
+
 v0.2.17
 ==============================
 * added new demo and auto-ghp
