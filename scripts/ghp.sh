@@ -55,7 +55,7 @@ rm index.vulacanized.html
 cd ../ #remember to exit out of the component before you do any git stuff
 
 #do the git stuff
-git add .
+git add . -A
 git commit -m "rebuild github pages"
 eval `ssh-agent -s`
 #and cahnge permissions

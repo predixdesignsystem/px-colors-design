@@ -1,3 +1,7 @@
+v0.2.23
+==============================
+* fix ghp script to use git add with -A option
+
 v0.2.22
 ==============================
 * merge PR #3 which adds a Polymer style module for colors
