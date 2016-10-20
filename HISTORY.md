@@ -1,3 +1,7 @@
+v0.2.21
+==============================
+* updated 'use it in your project' section in demo
+
 v0.2.20
 ==============================
 * Install new version of `px-sass-doc` component

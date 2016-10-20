@@ -41,24 +41,27 @@
 
 <!-- 5: Set Usage HTML -->
 <section data-slot="usage">
-Once installed in your project, you can refer to any of the Sass color variables from any of your custom Sass code:
+<p>
+  <strong>Sass Variable</strong><br/>
+  Once installed in your project, you can refer to any of the Sass color variables from any of your custom Sass code:
+</p>
 
 ```
 background-color: $black;
 ```
 
-This component can also be installed as a Polymer behavior. After you install it with Bower, reference it in your project:
+<br/>
+<p>
+  <strong>Polymer Behavior</strong><br/>
+  This component can also be installed as a Polymer behavior. After you install it with Bower, reference it in your project:
+</p>
 
 ```
-<!--
-Import behavior in the document head (remove from comment):
+<!-- Import behavior in the document head (remove from comment): -->
 <link rel="import" href="../px-colors-design/colors.html" />
--->
-```
 
-And add the variable as a behavior:
 
-```
+<!-- add the variable as a behavior: -->
 <script>
   Polymer({
     is: 'px-my-component',
@@ -68,7 +71,11 @@ And add the variable as a behavior:
 </script>
 ```
 
-Alternatively, if you are not using Polymer in your project, you can access the JavaScript variables directly. After install/import:
+<br/>
+<p>
+  <strong>JavaScript Variable</strong><br/>
+  Alternatively, if you are not using Polymer in your project, you can access the JavaScript variables directly. After install/import:
+</p>
 
 ```
 var primaryBlue = commonColors.properties.colors.value.primary-blue;
