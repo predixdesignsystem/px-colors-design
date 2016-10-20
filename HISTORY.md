@@ -1,3 +1,7 @@
+v0.2.22
+==============================
+* merge PR #3 which adds a Polymer style module for colors
+
 v0.2.21
 ==============================
 * updated 'use it in your project' section in demo
