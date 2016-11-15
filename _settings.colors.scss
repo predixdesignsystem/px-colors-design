@@ -10,93 +10,93 @@
      * Primary
      */
 
-    $red                            : rgb(227,37,51);
-    $blue                           : rgb(0,92,185);
-    $green                          : rgb(70,173,0);
-    $purple                         : rgb(134,105,255);
-    $orange                         : rgb(255,152,33);
-    $yellow                         : rgb(255,237,69);
+    $red                            : var(--px-colors-design-red, rgb(227,37,51));
+    $blue                           : var(--px-colors-design-blue, rgb(0,92,185));
+    $green                          : var(--px-colors-design-green, rgb(70,173,0));
+    $purple                         : var(--px-colors-design-purple, rgb(134,105,255));
+    $orange                         : var(--px-colors-design-orange, rgb(255,152,33));
+    $yellow                         : var(--px-colors-design-yellow, rgb(255,237,69));
 
     /**
      * Light
      */
 
-    $red-light                      : rgb(255,92,92);
-    $blue-light                     : rgb(54,147,248);
-    $green-light                    : rgb(117,216,53);
-    $purple-light                   : rgb(156,151,255);
-    $orange-light                   : rgb(255,187,102);
-    $yellow-light                   : rgb(255,249,141);
+    $red-light                      : var(--px-colors-design-red-light, rgb(255,92,92));
+    $blue-light                     : var(--px-colors-design-blue-light, rgb(54,147,248));
+    $green-light                    : var(--px-colors-design-green-light, rgb(117,216,53));
+    $purple-light                   : var(--px-colors-design-purple-light, rgb(156,151,255));
+    $orange-light                   : var(--px-colors-design-orange-light, rgb(255,187,102));
+    $yellow-light                   : var(--px-colors-design-yellow-light, rgb(255,249,141));
 
     /**
      * Dark
      */
 
-    $red-dark                       : rgb(182,18,37);
-    $blue-dark                      : rgb(0,54,110);
-    $green-dark                     : rgb(29,95,17);
-    $purple-dark                    : rgb(89,81,148);
-    $orange-dark                    : rgb(229,92,0);
-    $yellow-dark                    : rgb(255,207,69);
+    $red-dark                       : var(--px-colors-design-red-dark, rgb(182,18,37));
+    $blue-dark                      : var(--px-colors-design-blue-dark, rgb(0,54,110));
+    $green-dark                     : var(--px-colors-design-green-dark, rgb(29,95,17));
+    $purple-dark                    : var(--px-colors-design-purple-dark, rgb(89,81,148));
+    $orange-dark                    : var(--px-colors-design-orange-dark, rgb(229,92,0));
+    $yellow-dark                    : var(--px-colors-design-yellow-dark, rgb(255,207,69));
 
 /**
  * Monochromatic (gray10 is darkest, gray1 is lightest)
  */
 
-$black                          : rgb(0,0,0);
-$gray10                         : rgb(36,35,38);
-$gray9                          : rgb(59,59,63);
-$gray8                          : rgb(82,81,86);
-$gray7                          : rgb(124,124,132);
-$gray6                          : rgb(153,153,163);
-$gray5                          : rgb(177,177,188);
-$gray4                          : rgb(209,208,216);
-$gray3                          : rgb(228,228,234);
-$gray2                          : rgb(239,239,244);
-$gray1                          : rgb(247,247,252);
-$white                          : rgb(255,255,255);
+$black                          : var(--px-colors-design-black, rgb(0,0,0));
+$gray10                         : var(--px-colors-design-gray10, rgb(36,35,38));
+$gray9                          : var(--px-colors-design-gray9, rgb(59,59,63));
+$gray8                          : var(--px-colors-design-gray8, rgb(82,81,86));
+$gray7                          : var(--px-colors-design-gray7, rgb(124,124,132));
+$gray6                          : var(--px-colors-design-gray6, rgb(153,153,163));
+$gray5                          : var(--px-colors-design-gray5, rgb(177,177,188));
+$gray4                          : var(--px-colors-design-gray4, rgb(209,208,216));
+$gray3                          : var(--px-colors-design-gray3, rgb(228,228,234));
+$gray2                          : var(--px-colors-design-gray2, rgb(239,239,244));
+$gray1                          : var(--px-colors-design-gray1, rgb(247,247,252));
+$white                          : var(--px-colors-design-white, rgb(255,255,255));
 
-$graybg                         : rgb(139,141,143);
+$graybg                         : var(--px-colors-design-graybg, rgb(139,141,143));
 
 /**
  * Define grey = gray to avoid dev typos
  */
-$grey10                         : $gray10;
-$grey9                          : $gray9;
-$grey8                          : $gray8;
-$grey7                          : $gray7;
-$grey6                          : $gray6;
-$grey5                          : $gray5;
-$grey4                          : $gray4;
-$grey3                          : $gray3;
-$grey2                          : $gray2;
-$grey1                          : $gray1;
-$greybg                         : $graybg;
+$grey10                         : var(--px-colors-design-grey10, $gray10);
+$grey9                          : var(--px-colors-design-grey9, $gray9);
+$grey8                          : var(--px-colors-design-grey8, $gray8);
+$grey7                          : var(--px-colors-design-grey7, $gray7);
+$grey6                          : var(--px-colors-design-grey6, $gray6);
+$grey5                          : var(--px-colors-design-grey5, $gray5);
+$grey4                          : var(--px-colors-design-grey4, $gray4);
+$grey3                          : var(--px-colors-design-grey3, $gray3);
+$grey2                          : var(--px-colors-design-grey2, $gray2);
+$grey1                          : var(--px-colors-design-grey1, $gray1);
+$greybg                         : var(--px-colors-design-greybg, $graybg);
 
 /**
  * Buttons
  */
 
-$primary-blue                   : rgb(62,135,232);
-$primary-blue-hover             : rgb(53,115,197);
-$primary-blue-pressed           : rgb(43,94,162);
+$primary-blue                   : var(--px-colors-design-primary-blue, rgb(62,135,232));
+$primary-blue-hover             : var(--px-colors-design-primary-blue-hover, rgb(53,115,197));
+$primary-blue-pressed           : var(--px-colors-design-primary-blue-pressed, rgb(43,94,162));
 
 /**
  * Selection
  */
 
-$select-blue-default            : rgb(10,158,193);
-$select-blue-hover              : rgb(9,134,164);
-$select-blue-pressed            : rgb(8,110,135);
+$select-blue-default            : var(--px-colors-design-select-blue-default, rgb(10,158,193));
+$select-blue-hover              : var(--px-colors-design-select-blue-hover, rgb(9,134,164));
+$select-blue-pressed            : var(--px-colors-design-select-blue-pressed, rgb(8,110,135));
 
 /**
  * Alerts
  */
 
-$alert-red                      : rgb(229,56,56);
-$alert-orange                   : rgb(221,107,31);
-$alert-yellow                   : rgb(232,167,54);
-$alert-blue                     : rgb(67,100,221);
+$alert-red                      : var(--px-colors-design-alert-red, rgb(229,56,56));
+$alert-orange                   : var(--px-colors-design-alert-orange, rgb(221,107,31));
+$alert-yellow                   : var(--px-colors-design-alert-yellow, rgb(232,167,54));
+$alert-blue                     : var(--px-colors-design-alert-blue, rgb(67,100,221));
 
 /**
  * Data Visualization
@@ -106,43 +106,126 @@ $alert-blue                     : rgb(67,100,221);
      * Basic
      */
 
-    $dv-basic-blue                  : rgb(93,165,218);
-    $dv-basic-orange                : rgb(250,164,58);
-    $dv-basic-green                 : rgb(96,189,104);
-    $dv-basic-pink                  : rgb(241,124,176);
-    $dv-basic-brown                 : rgb(178,145,47);
-    $dv-basic-purple                : rgb(178,118,178);
-    $dv-basic-yellow                : rgb(222,207,63);
-    $dv-basic-red                   : rgb(241,88,84);
-    $dv-basic-gray                  : rgb(77,77,77);
-    $dv-basic-grey                  : $dv-basic-gray;
+    $dv-basic-blue                  : var(--px-colors-design-dv-basic-blue, rgb(93,165,218));
+    $dv-basic-orange                : var(--px-colors-design-dv-basic-orange, rgb(250,164,58));
+    $dv-basic-green                 : var(--px-colors-design-dv-basic-green, rgb(96,189,104));
+    $dv-basic-pink                  : var(--px-colors-design-dv-basic-pink, rgb(241,124,176));
+    $dv-basic-brown                 : var(--px-colors-design-dv-basic-brown, rgb(178,145,47));
+    $dv-basic-purple                : var(--px-colors-design-dv-basic-purple, rgb(178,118,178));
+    $dv-basic-yellow                : var(--px-colors-design-dv-basic-yellow, rgb(222,207,63));
+    $dv-basic-red                   : var(--px-colors-design-dv-basic-red, rgb(241,88,84));
+    $dv-basic-gray                  : var(--px-colors-design-dv-basic-gray, rgb(77,77,77));
+    $dv-basic-grey                  : var(--px-colors-design-dv-basic-grey, $dv-basic-gray);
 
     /**
      * Light
      */
 
-    $dv-light-blue                  : rgb(136,189,230);
-    $dv-light-orange                : rgb(251,178,88);
-    $dv-light-green                 : rgb(144,205,151);
-    $dv-light-pink                  : rgb(246,170,201);
-    $dv-light-brown                 : rgb(191,165,84);
-    $dv-light-purple                : rgb(188,153,199);
-    $dv-light-yellow                : rgb(237,221,70);
-    $dv-light-red                   : rgb(240,126,110);
-    $dv-light-gray                  : rgb(140,140,140);
-    $dv-light-grey                  : $dv-light-gray;
+    $dv-light-blue                  : var(--px-colors-design-dv-light-blue, rgb(136,189,230));
+    $dv-light-orange                : var(--px-colors-design-dv-light-orange, rgb(251,178,88));
+    $dv-light-green                 : var(--px-colors-design-dv-light-green, rgb(144,205,151));
+    $dv-light-pink                  : var(--px-colors-design-dv-light-pink, rgb(246,170,201));
+    $dv-light-brown                 : var(--px-colors-design-dv-light-brown, rgb(191,165,84));
+    $dv-light-purple                : var(--px-colors-design-dv-light-purple, rgb(188,153,199));
+    $dv-light-yellow                : var(--px-colors-design-dv-light-yellow, rgb(237,221,70));
+    $dv-light-red                   : var(--px-colors-design-dv-light-red, rgb(240,126,110));
+    $dv-light-gray                  : var(--px-colors-design-dv-light-gray, rgb(140,140,140));
+    $dv-light-grey                  : var(--px-colors-design-dv-light-grey, $dv-light-gray);
 
     /**
      * Dark
      */
 
-    $dv-dark-blue                   : rgb(38,93,171);
-    $dv-dark-orange                 : rgb(223,92,36);
-    $dv-dark-green                  : rgb(5,151,72);
-    $dv-dark-pink                   : rgb(229,18,111);
-    $dv-dark-brown                  : rgb(157,114,42);
-    $dv-dark-purple                 : rgb(123,58,150);
-    $dv-dark-yellow                 : rgb(199,180,46);
-    $dv-dark-red                    : rgb(203,32,39);
-    $dv-dark-gray                   : $black;
-    $dv-dark-grey                   : $dv-dark-gray;
+    $dv-dark-blue                   : var(--px-colors-design-dv-dark-blue, rgb(38,93,171));
+    $dv-dark-orange                 : var(--px-colors-design-dv-dark-orange, rgb(223,92,36));
+    $dv-dark-green                  : var(--px-colors-design-dv-dark-green, rgb(5,151,72));
+    $dv-dark-pink                   : var(--px-colors-design-dv-dark-pink, rgb(229,18,111));
+    $dv-dark-brown                  : var(--px-colors-design-dv-dark-brown, rgb(157,114,42));
+    $dv-dark-purple                 : var(--px-colors-design-dv-dark-purple, rgb(123,58,150));
+    $dv-dark-yellow                 : var(--px-colors-design-dv-dark-yellow, rgb(199,180,46));
+    $dv-dark-red                    : var(--px-colors-design-dv-dark-red, rgb(203,32,39));
+    $dv-dark-gray                   : var(--px-colors-design-dv-dark-gray, $black);
+    $dv-dark-grey                   : var(--px-colors-design-dv-dark-grey, $dv-dark-gray);
+
+    h1{color: $red}
+    h1{color: $blue}
+    h1{color: $green}
+    h1{color: $purple}
+    h1{color: $orange}
+    h1{color: $yellow}
+    h1{color: $red-light}
+    h1{color: $blue-light}
+    h1{color: $green-light}
+    h1{color: $purple-light}
+    h1{color: $orange-light}
+    h1{color: $yellow-light}
+    h1{color: $red-dark}
+    h1{color: $blue-dark}
+    h1{color: $green-dark}
+    h1{color: $purple-dark}
+    h1{color: $orange-dark}
+    h1{color: $yellow-dark}
+    h1{color: $black}
+    h1{color: $gray10}
+    h1{color: $gray9}
+    h1{color: $gray8}
+    h1{color: $gray7}
+    h1{color: $gray6}
+    h1{color: $gray5}
+    h1{color: $gray4}
+    h1{color: $gray3}
+    h1{color: $gray2}
+    h1{color: $gray1}
+    h1{color: $white}
+    h1{color: $graybg}
+    h1{color: $grey10}
+    h1{color: $grey9}
+    h1{color: $grey8}
+    h1{color: $grey7}
+    h1{color: $grey6}
+    h1{color: $grey5}
+    h1{color: $grey4}
+    h1{color: $grey3}
+    h1{color: $grey2}
+    h1{color: $grey1}
+    h1{color: $greybg}
+    h1{color: $primary-blue}
+    h1{color: $primary-blue-hover}
+    h1{color: $primary-blue-pressed}
+    h1{color: $select-blue-default}
+    h1{color: $select-blue-hover}
+    h1{color: $select-blue-pressed}
+    h1{color: $alert-red}
+    h1{color: $alert-orange}
+    h1{color: $alert-yellow}
+    h1{color: $alert-blue}
+    h1{color: $dv-basic-blue}
+    h1{color: $dv-basic-orange}
+    h1{color: $dv-basic-green}
+    h1{color: $dv-basic-pink}
+    h1{color: $dv-basic-brown}
+    h1{color: $dv-basic-purple}
+    h1{color: $dv-basic-yellow}
+    h1{color: $dv-basic-red}
+    h1{color: $dv-basic-gray}
+    h1{color: $dv-basic-grey}
+    h1{color: $dv-light-blue}
+    h1{color: $dv-light-orange}
+    h1{color: $dv-light-green}
+    h1{color: $dv-light-pink}
+    h1{color: $dv-light-brown}
+    h1{color: $dv-light-purple}
+    h1{color: $dv-light-yellow}
+    h1{color: $dv-light-red}
+    h1{color: $dv-light-gray}
+    h1{color: $dv-light-grey}
+    h1{color: $dv-dark-blue}
+    h1{color: $dv-dark-orange}
+    h1{color: $dv-dark-green}
+    h1{color: $dv-dark-pink}
+    h1{color: $dv-dark-brown}
+    h1{color: $dv-dark-purple}
+    h1{color: $dv-dark-yellow}
+    h1{color: $dv-dark-red}
+    h1{color: $dv-dark-gray}
+    h1{color: $dv-dark-grey}
