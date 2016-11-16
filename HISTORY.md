@@ -1,3 +1,6 @@
+v0.2.29
+==================
+* Revert CSS variable change for now.
 
 v0.2.28
 ==================
