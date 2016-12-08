@@ -1,0 +1,69 @@
+Arguments: 
+  /Users/mw/.nvm/versions/node/v6.3.1/bin/node /Users/mw/.nvm/versions/node/v6.3.1/bin/yarn install
+
+PATH: 
+  /Users/mw/Downloads/google-cloud-sdk/bin:/Users/mw/.nvm/versions/node/v6.3.1/bin:/usr/local/heroku/bin:/usr/local/bin:/Applications/MNPP/init:/Applications/MNPP/Library/php53/bin:/Applications/MNPP/Library/mysql/bin:/Users/mw/dev/play-2.2.3:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  0.17.9
+
+Node version: 
+  6.3.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+      "name": "px-colors-design",
+      "version": "0.2.29",
+      "description": "Default color variables for Predix UI",
+      "private": false,
+      "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "repository": {
+          "type": "git",
+          "url": "https://github.com/PredixDev/px-colors-design.git"
+      },
+      "author": "General Electric",
+      "devDependencies": {
+          "browser-sync": "^2.13.0",
+          "gulp": "^3.9.1",
+          "gulp-autoprefixer": "^3.1.0",
+          "gulp-bump": "^2.4.0",
+          "gulp-clean": "^0.3.2",
+          "gulp-concat": "^2.6.0",
+          "gulp-cssmin": "^0.1.7",
+          "gulp-if": "^2.0.1",
+          "gulp-load-plugins": "^1.2.4",
+          "gulp-match": "^1.0.2",
+          "gulp-rename": "^1.2.2",
+          "gulp-sass": "^2.3.2",
+          "gulp-sequence": "^0.4.5",
+          "gulp-style-modules": "^0.1.0",
+          "node-sass-import-once": "^1.2.0",
+          "sassdoc": "^2.1.20",
+          "stream-combiner2": "^1.1.1",
+          "yargs": "^6.0.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/gulp-bump: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy-src.research.ge.com proxy-src.research.ge.com:8080
+      at ClientRequest.onError (/Users/mw/.nvm/versions/node/v6.3.1/lib/node_modules/yarn/node_modules/tunnel-agent/index.js:176:17)
+      at ClientRequest.g (events.js:286:16)
+      at emitOne (events.js:96:13)
+      at ClientRequest.emit (events.js:188:7)
+      at Socket.socketErrorListener (_http_client.js:308:9)
+      at emitOne (events.js:96:13)
+      at Socket.emit (events.js:188:7)
+      at connectErrorNT (net.js:1015:8)
+      at _combinedTickCallback (internal/process/next_tick.js:74:11)
+      at process._tickCallback (internal/process/next_tick.js:98:9)

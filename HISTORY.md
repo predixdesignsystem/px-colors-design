@@ -1,3 +1,6 @@
+v0.2.30
+==================
+* Move to style modules to demos
 v0.2.29
 ==================
 * Revert CSS variable change for now.
