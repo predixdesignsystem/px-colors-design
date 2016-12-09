@@ -15,7 +15,24 @@ Dependencies:
 
 */
 
-var commonColors = {
+var commonColors = [baseColors, dataVisColors];
+
+/*
+Name:
+baseColors
+
+Description:
+
+Polymer behavior that provides the basic color definitions
+
+Dependencies:
+- none
+
+@polymerBehavior baseColors
+
+*/
+
+var baseColors = {
 
   properties: {
     /**
@@ -24,9 +41,9 @@ var commonColors = {
     *
     * Format: Object
     */
-    colors:{
-      type:Object,
-      value:{
+    colors: {
+      type: Object,
+      value: {
         "graybg": "rgb(139,141,143)",
         "blue-dark": "rgb(0,54,110)",
         "alert-blue": "rgb(67,100,221)",
@@ -77,17 +94,38 @@ var commonColors = {
         "select-blue-default": "rgb(10,158,193)",
         "alert-orange": "rgb(221,107,31)",
         "grey1": "rgb(247,247,252)"
-}
-    },
+      }
+    }
+  }
+};
+
+/*
+Name:
+dataVisColors
+
+Description:
+
+Polymer behavior that provides the dataVisColors and an order to use them
+
+Dependencies:
+- none
+
+@polymerBehavior dataVisColors
+
+*/
+
+var dataVisColors = {
+
+  properties: {
     /**
-    * seriesColorOrder
+    * dataVisColors
     * Defines RBG values for each data vis color
     *
     * Format: Object
     */
-    dataVisColors:{
-      type:Object,
-      value:{
+    dataVisColors: {
+      type: Object,
+      value: {
         "dv-light-yellow": "rgb(237,221,70)",
         "dv-dark-blue": "rgb(38,93,171)",
         "dv-dark-purple": "rgb(123,58,150)",
@@ -118,7 +156,7 @@ var commonColors = {
         "dv-basic-yellow": "rgb(222,207,63)",
         "dv-dark-gray": "rgb(0,0,0)",
         "dv-dark-grey": "rgb(0,0,0)"
-}
+      }
     },
     /**
     * seriesColorOrder
@@ -126,9 +164,9 @@ var commonColors = {
     *
     * Format: Array
     */
-    seriesColorOrder:{
-      type:Array,
-      value:[
+    seriesColorOrder: {
+      type: Array,
+      value: [
         "dv-basic-blue",
         "dv-basic-orange",
         "dv-basic-green",
@@ -155,7 +193,7 @@ var commonColors = {
         "dv-dark-purple",
         "dv-dark-yellow",
         "dv-dark-red"
-]
+      ]
     },
   }
 };
