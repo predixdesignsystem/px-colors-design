@@ -1,3 +1,7 @@
+v0.2.32
+==================
+* Fix behaviors order
+
 v0.2.31
 ==================
 * Split commonColors into 2 behaviors that can be used independently: baseColors and dataVisColors. Keep commonColors as the sum of the two
