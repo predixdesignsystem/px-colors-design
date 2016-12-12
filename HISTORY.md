@@ -1,3 +1,7 @@
+v0.2.33
+==================
+* Updated dependencies
+
 v0.2.32
 ==================
 * Fix behaviors order
