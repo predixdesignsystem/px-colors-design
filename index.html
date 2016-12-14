@@ -18,6 +18,20 @@
   <link rel="import" href="css/px-colors-design-demo-styles.html" />
   <style include="px-colors-design-demo-styles" is="custom-style"></style>
 
+  <style>
+    .color {
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+    .chip {
+      float: left;
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+    }
+  </style>
+
 </head>
 <body>
 <template id="just-for-demo" is="dom-bind">
@@ -78,8 +92,8 @@ background-color: $black;
 </p>
 
 ```
-var primaryBlue = commonColors.properties.colors.value.primary-blue;
-var dvPink = commonColors.properties.dataVisColors.value.dv-basic-pink;
+var primaryBlue = baseColors.properties.colors.value.primary-blue;
+var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
 ```
 </section>
 
@@ -192,8 +206,8 @@ var dvPink = commonColors.properties.dataVisColors.value.dv-basic-pink;
 <script>
   var template = document.querySelector('template[is=dom-bind]');
 
-  template.colors = commonColors.properties.colors.value;
-  template.dataVisColors = commonColors.properties.dataVisColors.value;
+  template.colors = baseColors.properties.colors.value;
+  template.dataVisColors = dataVisColors.properties.dataVisColors.value;
 
   document.addEventListener('px-sass-doc-options-updated', function(evt) {
     template.importCode = template._importCode();

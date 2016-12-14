@@ -1,3 +1,7 @@
+v0.2.34
+==================
+* fixed demo page
+
 v0.2.33
 ==================
 * Updated dependencies
