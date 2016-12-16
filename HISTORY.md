@@ -1,3 +1,7 @@
+v0.3.0
+==================
+* Add `dataVisColorTheming` shared behavior to unify theming methods across px-vis-* and px-simple-* charts
+
 v0.2.34
 ==================
 * fixed demo page
