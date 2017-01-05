@@ -1,3 +1,7 @@
+v0.3.2
+==================
+* added _settings.colors-dark.scss 
+
 v0.3.1
 ==================
 * Removed color converter py script; need to manually update color behavior now.
