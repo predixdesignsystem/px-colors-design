@@ -1,6 +1,6 @@
 {
     "name": "px-colors-design",
-    "version": "0.3.4",
+    "version": "0.3.5",
     "description": "Default color variables for Predix UI",
     "private": false,
     "scripts": {
