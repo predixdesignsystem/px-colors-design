@@ -1,3 +1,8 @@
+v0.3.6
+==================
+* updated to new demo using px-demo classes
+* added colors-dark.html 
+
 v0.3.4
 ==================
 * updated to cool grays
