@@ -1,3 +1,7 @@
+v0.3.7
+==================
+* added 'Dark' to the end of the property names in color-dark.html 
+
 v0.3.6
 ==================
 * updated to new demo using px-demo classes
