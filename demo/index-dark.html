@@ -49,14 +49,14 @@ background-color: $black;
 
 ```
 <!-- Import behavior in the document head (remove from comment): -->
-<link rel="import" href="../px-colors-design/colors.html" /> 
+<!--<link rel="import" href="../px-colors-design/colors-dark.html" /> -->
 
 
 <!-- add the variable as a behavior: -->
 <!--<script>
 Polymer({
   is: 'px-my-component',
-  behaviors: [commonColors],
+  behaviors: [commonColorsDark],
   //...
 });
 </script> -->
@@ -183,9 +183,6 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
     attached : function(){
       var boundHandler = this._handleOptionsUpdated.bind(this); 
       this.addEventListener('px-sass-doc-options-updated', boundHandler)
-
-      // this.colors = baseColors.properties.colors.value;
-      // this.dataVisColors = dataVisColors.properties.dataVisColors.value; 
     },
     
     detached : function(){
@@ -201,27 +198,8 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
     },
 
     _importCode : function() {
-      return '@import "px-colors-design/_settings.colors.scss";';
+      return '@import "px-colors-design/_settings.colors-dark.scss";';
     },
 
   });
 </script>
-
-<!--<script>
-  var template = document.querySelector('template[is=dom-bind]');
-
-  template.colors = baseColors.properties.colors.value;
-  template.dataVisColors = dataVisColors.properties.dataVisColors.value;
-
-  document.addEventListener('px-sass-doc-options-updated', function(evt) {
-    template.importCode = template._importCode();
-    template.spanClass = template._spanClass();
-
-    // Wait, then tell the highlighter to run after dom-if restamps
-    template.async(function(){ template.fire('px-sass-doc-demo-updated', {}) }, 10);
-  });
-
-  template._importCode = function() {
-    return '@import "px-colors-design/_settings.colors.scss";';
-  };
-</script>-->
