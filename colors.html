@@ -21,56 +21,57 @@ PxColorsBehavior.baseColors = {
     colors: {
       type: Object,
       value: {
+        "black": "rgb(0,0,0)",
+        "grey10": "rgb(27,42,51)",
+        "grey9": "rgb(44,64,76)",
+        "grey8": "rgb(66,88,102)",
+        "grey7": "rgb(89,113,127)",
+        "grey6": "rgb(116,139,153)",
+        "grey5": "rgb(150,168,178)",
+        "grey4": "rgb(182,195,204)",
+        "grey3": "rgb(216,224,229)",
+        "grey2": "rgb(226,232,237)",
+        "grey1": "rgb(240,244,247)",
+        "gray10": "rgb(27,42,51)",
+        "gray9": "rgb(44,64,76)",
+        "gray8": "rgb(66,88,102)",
+        "gray7": "rgb(89,113,127)",
+        "gray6": "rgb(116,139,153)",
+        "gray5": "rgb(150,168,178)",
+        "gray4": "rgb(182,195,204)",
+        "gray3": "rgb(216,224,229)",
+        "gray2": "rgb(226,232,237)",
+        "gray1": "rgb(240,244,247)",
+        "white": "rgb(255,255,255)",
         "graybg": "rgb(139,141,143)",
-        "blue-dark": "rgb(0,54,110)",
-        "alert-blue": "rgb(67,100,221)",
-        "select-blue-pressed": "rgb(8,110,135)",
-        "yellow": "rgb(255,237,69)",
-        "alert-yellow": "rgb(232,167,54)",
-        "blue": "rgb(0,92,185)",
-        "yellow-dark": "rgb(255,207,69)",
-        "purple": "rgb(134,105,255)",
-        "orange-light": "rgb(255,187,102)",
-        "gray10": "rgb(36,35,38)",
-        "select-blue-hover": "rgb(9,134,164)",
-        "red-dark": "rgb(182,18,37)",
+        "primary-blue": "rgb(62,135,232)",
         "primary-blue-hover": "rgb(53,115,197)",
         "primary-blue-pressed": "rgb(43,94,162)",
-        "black": "rgb(0,0,0)",
-        "orange": "rgb(255,152,33)",
-        "purple-light": "rgb(156,151,255)",
-        "white": "rgb(255,255,255)",
-        "red-light": "rgb(255,92,92)",
-        "orange-dark": "rgb(229,92,0)",
-        "red": "rgb(227,37,51)",
-        "alert-red": "rgb(229,56,56)",
-        "grey8": "rgb(82,81,86)",
-        "grey9": "rgb(59,59,63)",
-        "grey6": "rgb(153,153,163)",
-        "grey7": "rgb(124,124,132)",
-        "grey4": "rgb(209,208,216)",
-        "grey5": "rgb(177,177,188)",
-        "grey2": "rgb(239,239,244)",
-        "grey3": "rgb(228,228,234)",
-        "primary-blue": "rgb(62,135,232)",
-        "gray8": "rgb(82,81,86)",
-        "gray9": "rgb(59,59,63)",
-        "gray2": "rgb(239,239,244)",
-        "gray3": "rgb(228,228,234)",
-        "gray1": "rgb(247,247,252)",
-        "gray6": "rgb(153,153,163)",
-        "gray7": "rgb(124,124,132)",
-        "gray4": "rgb(209,208,216)",
-        "yellow-light": "rgb(255,249,141)",
-        "blue-light": "rgb(54,147,248)",
-        "green-dark": "rgb(29,95,17)",
-        "gray5": "rgb(177,177,188)",
-        "purple-dark": "rgb(89,81,148)",
-        "green-light": "rgb(117,216,53)",
-        "green": "rgb(70,173,0)",
         "select-blue-default": "rgb(10,158,193)",
+        "select-blue-hover": "rgb(9,134,164)",
+        "select-blue-pressed": "rgb(8,110,135)",
+        "alert-red": "rgb(229,56,56)",
+        "alert-blue": "rgb(67,100,221)",
+        "alert-yellow": "rgb(232,167,54)",
         "alert-orange": "rgb(221,107,31)",
-        "grey1": "rgb(247,247,252)"
+        "red": "rgb(227,37,51)",
+        "orange": "rgb(255,152,33)",
+        "yellow": "rgb(255,237,69)",
+        "green": "rgb(70,173,0)",
+        "blue": "rgb(0,92,185)",
+        "purple": "rgb(134,105,255)",
+        "red-light": "rgb(255,92,92)",
+        "orange-light": "rgb(255,187,102)",
+        "yellow-light": "rgb(255,249,141)",
+        "green-light": "rgb(117,216,53)",
+        "blue-light": "rgb(54,147,248)",
+        "purple-light": "rgb(156,151,255)",
+        "red-dark": "rgb(182,18,37)",
+        "yellow-dark": "rgb(255,207,69)",
+        "orange-dark": "rgb(229,92,0)",
+        "green-dark": "rgb(29,95,17)",
+        "blue-dark": "rgb(0,54,110)",
+        "purple-dark": "rgb(89,81,148)"
       }
     }
   }
@@ -252,11 +253,17 @@ PxColorsBehavior.dataVisColorTheming = [{
      */
     _applyStyleVariables: function() {
       var variableBase = '--px-vis-series-color-';
-      var dataVisColors = this.dataVisColors;
+      var newColors = {};
       var seriesColorOrder = [];
       var index = 0;
       var stop = false;
       var currentColor;
+      var dataVisColorsKeys = Object.keys(this.dataVisColors);
+
+      //copy colors we already have
+      for (i = 0, length = dataVisColorsKeys.length; i < length; i++) {
+        newColors[dataVisColorsKeys[i]] = this.dataVisColors[dataVisColorsKeys[i]];
+      };
 
       //check if the developer passed in their own seriesColorOrder
       var devSet = this._checkIfDevSetSeriesColorOrder();
@@ -275,7 +282,7 @@ PxColorsBehavior.dataVisColorTheming = [{
           currentColor = currentColor[0] === '#' ? this._colorHexToRgb(currentColor) : currentColor;
 
           // Store values to set later
-          dataVisColors['pxVisSeriesColor' + index] = currentColor;
+          newColors['pxVisSeriesColor' + index] = currentColor;
           
           if(!devSet) {
             seriesColorOrder.push('pxVisSeriesColor' + index);
@@ -288,7 +295,7 @@ PxColorsBehavior.dataVisColorTheming = [{
 
       // Set properties on self to new values
       // @TODO Use batch update in Polymer 2.0
-      this.set('dataVisColors', dataVisColors);
+      this.set('dataVisColors', newColors);
 
       if(!devSet) {
         this.set('seriesColorOrder', seriesColorOrder);
@@ -304,26 +311,33 @@ PxColorsBehavior.dataVisColorTheming = [{
      * @method _applyDefaultStyleVariables
      */
     _applyDefaultStyleVariables: function() {
-      var dataVisColors = this.dataVisColors;
-      var seriesColorOrder = this.seriesColorOrder;
-      var dataVisColorsKeys = Object.keys(dataVisColors);
+      var newColors = {};
+      var newOrder = [];
+      var dataVisColorsKeys = Object.keys(this.dataVisColors);
       var i;
       var length;
 
+      //check if the developer passed in their own seriesColorOrder
+      var devSet = this._checkIfDevSetSeriesColorOrder();
+
       for (i = 0, length = dataVisColorsKeys.length; i < length; i++) {
-        dataVisColors['pxVisSeriesColor' + i] = dataVisColors[dataVisColorsKeys[i]];
+        newColors[dataVisColorsKeys[i]] = this.dataVisColors[dataVisColorsKeys[i]];
+        newColors['pxVisSeriesColor' + i] = this.dataVisColors[dataVisColorsKeys[i]];
       };
 
-      var updatedDataVisColorsKeys = Object.keys(dataVisColors);
-      for (i = 0, length = this.seriesColorOrder.length; i < length; i++) {
-        var visIndex = updatedDataVisColorsKeys.indexOf(this.seriesColorOrder[i]);
-        seriesColorOrder[i] = 'pxVisSeriesColor' + visIndex;
-      };
+      if(!devSet) {
+        var updatedDataVisColorsKeys = Object.keys(newColors);
+        for (i = 0, length = this.seriesColorOrder.length; i < length; i++) {
+          var visIndex = dataVisColorsKeys.indexOf(this.seriesColorOrder[i]);
+          newOrder[i] = 'pxVisSeriesColor' + visIndex;
+        };
 
-      // Set properties on self to new values
-      // @TODO Use batch update in Polymer 2.0
-      this.set('dataVisColors', dataVisColors);
-      this.set('seriesColorOrder', seriesColorOrder);
+        // Set properties on self to new values
+        // @TODO Use batch update in Polymer 2.0
+        this.set('seriesColorOrder', newOrder);
+      }
+    
+      this.set('dataVisColors', newColors);
     },
 
     /**

@@ -1,3 +1,8 @@
+v0.3.2
+==================
+* ensure dev set orders can override also when not using a style
+* fix reference issue causing the dataviscolors object to be shared across instances
+
 v0.3.1
 ==================
 * Removed color converter py script; need to manually update color behavior now.
