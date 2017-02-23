@@ -1,0 +1,202 @@
+<script>
+var PxColorsBehavior = PxColorsBehavior || {};
+
+/*
+  Name:
+  PxColorsBehavior.baseColors
+
+  Description:
+  Polymer behavior that provides the basic color definitions
+
+  @polymerBehavior PxColorsBehavior.baseColors
+*/
+PxColorsBehavior.baseColors = {
+  properties: {
+    /**
+     * A key/value map of Predix UI color variable names to their RGB values.
+     *
+     * @property colors
+     * @type {Object}
+     */
+    colorsDark: {
+      type: Object,
+      value: {
+        "d-black": "rgb(0,0,0)",
+        "d-grey20": "rgb(5,9,12)",
+        "d-grey19": "rgb(12,20,25)",
+        "d-grey18": "rgb(18,31,38)",
+        "d-grey17": "rgb(27,42,51)",
+        "d-grey16": "rgb(35,52,63)",
+        "d-grey15": "rgb(44,64,76)",
+        "d-grey14": "rgb(54,76,89)",
+        "d-grey13": "rgb(66,88,102)",
+        "d-grey12": "rgb(76,100,114)",
+        "d-grey11": "rgb(89,113,127)",
+        "d-grey10": "rgb(103,126,140)",
+        "d-grey9": "rgb(116,139,153)",
+        "d-grey8": "rgb(136,154,165)",
+        "d-grey7": "rgb(150,168,178)",
+        "d-grey6": "rgb(163,181,191)",
+        "d-grey5": "rgb(182,195,204)",
+        "d-grey4": "rgb(197,209,216)",
+        "d-grey3": "rgb(216,224,229)",
+        "d-grey2": "rgb(226,232,237)",
+        "d-grey1": "rgb(235,239,242)",
+        "d-gray20": "rgb(5,9,12)",
+        "d-gray19": "rgb(12,20,25)",
+        "d-gray18": "rgb(18,31,38)",
+        "d-gray17": "rgb(27,42,51)",
+        "d-gray16": "rgb(35,52,63)",
+        "d-gray15": "rgb(44,64,76)",
+        "d-gray14": "rgb(54,76,89)",
+        "d-gray13": "rgb(66,88,102)",
+        "d-gray12": "rgb(76,100,114)",
+        "d-gray11": "rgb(89,113,127)",
+        "d-gray10": "rgb(103,126,140)",
+        "d-gray9": "rgb(116,139,153)",
+        "d-gray8": "rgb(136,154,165)",
+        "d-gray7": "rgb(150,168,178)",
+        "d-gray6": "rgb(163,181,191)",
+        "d-gray5": "rgb(182,195,204)",
+        "d-gray4": "rgb(197,209,216)",
+        "d-gray3": "rgb(216,224,229)",
+        "d-gray2": "rgb(226,232,237)",
+        "d-gray1": "rgb(235,239,242)",
+        "d-white": "rgb(255,255,255)",
+        "d-primary-blue": "rgb(0,115,165)",
+        "d-primary-blue-hover": "rgb(0,79,114)",
+        "d-primary-blue-pressed": "rgb(0,66,102)",
+        "d-select-blue-default": "rgb(9,98,112)",
+        "d-select-blue-hover": "rgb(8,88,96)",
+        "d-select-blue-pressed": "rgb(6,69,76)",
+        "d-alert-red": "rgb(191,48,44)",
+        "d-alert-blue": "rgb(17,98,153)",
+        "d-alert-yellow": "rgb(204,155,0)",
+        "d-alert-orange": "rgb(204,112,50)",
+        "d-alert-green": "rgb(96,127,20)"
+      }
+    }
+  }
+};
+
+// Maintain backward compatability by also exporting mixin as `baseColors`
+var baseColors = PxColorsBehavior.baseColors;
+
+/*
+  Name:
+  PxColorsBehavior.dataVisColors
+
+  Description:
+  Polymer behavior that provides the dataVisColors and an order to use them
+
+  @polymerBehavior PxColorsBehavior.dataVisColors
+*/
+PxColorsBehavior.dataVisColors = {
+  properties: {
+    /**
+     * * A key/value map of Predix UI data vis specific color variable names to
+     * their RGB values.
+     *
+     * @property dataVisColors
+     * @type {Object}
+     */
+    dataVisColorsDark: {
+      type: Object,
+      value: {
+        "d-dv-basic-1" : "rgb(211,94,13)",
+        "d-dv-basic-2" : "rgb(169,174,19)",
+        "d-dv-basic-3" : "rgb(0,134,28)",
+        "d-dv-basic-4" : "rgb(32,110,99)",
+        "d-dv-basic-5" : "rgb(0,96,140)",
+        "d-dv-basic-6" : "rgb(109,100,217)",
+        "d-dv-basic-7" : "rgb(1,157,210)",
+        "d-dv-basic-8" : "rgb(156,28,200)",
+        "d-dv-basic-9" : "rgb(218,2,136)",
+        "d-dv-basic-10" : "rgb(216,82,100)",
+        "d-dv-bright-1" : "rgb(247,136,44)",
+        "d-dv-bright-2" : "rgb(209,214,62)",
+        "d-dv-bright-3" : "rgb(44,172,72)",
+        "d-dv-bright-4" : "rgb(77,151,139)",
+        "d-dv-bright-5" : "rgb(42,137,180)",
+        "d-dv-bright-6" : "rgb(149,142,254)",
+        "d-dv-bright-7" : "rgb(46,196,248)",
+        "d-dv-bright-8" : "rgb(194,72,238)",
+        "d-dv-bright-9" : "rgb(255,45,176)",
+        "d-dv-bright-10" : "rgb(255,123,141)",
+        "d-dv-muted-1" : "rgb(133,60,5)",
+        "d-dv-muted-2" : "rgb(107,112,10)",
+        "d-dv-muted-3" : "rgb(2,85,18)",
+        "d-dv-muted-4" : "rgb(19,71,63)",
+        "d-dv-muted-5" : "rgb(0,61,89)",
+        "d-dv-muted-6" : "rgb(69,63,138)",
+        "d-dv-muted-7" : "rgb(0,101,134)",
+        "d-dv-muted-8" : "rgb(100,19,128)",
+        "d-dv-muted-9" : "rgb(138,0,86)",
+        "d-dv-muted-10" : "rgb(137,52,63)"
+      }
+    },
+
+    /**
+     * Defines an order that colors should be used in for multiple series.
+     *
+     * @property seriesColorOrder
+     * @type {Array}
+     */
+    seriesColorOrderDark: {
+      type: Array,
+      value: [
+        "d-dv-basic-1",
+        "d-dv-basic-2",
+        "d-dv-basic-3",
+        "d-dv-basic-4",
+        "d-dv-basic-5",
+        "d-dv-basic-6",
+        "d-dv-basic-7",
+        "d-dv-basic-8",
+        "d-dv-basic-9",
+        "d-dv-basic-10",
+        "d-dv-bright-1",
+        "d-dv-bright-2",
+        "d-dv-bright-3",
+        "d-dv-bright-4",
+        "d-dv-bright-5",
+        "d-dv-bright-6",
+        "d-dv-bright-7",
+        "d-dv-bright-8",
+        "d-dv-bright-9",
+        "d-dv-bright-10",
+        "d-dv-muted-1",
+        "d-dv-muted-2",
+        "d-dv-muted-3",
+        "d-dv-muted-4",
+        "d-dv-muted-5",
+        "d-dv-muted-6",
+        "d-dv-muted-7",
+        "d-dv-muted-8",
+        "d-dv-muted-9",
+        "d-dv-muted-10"
+      ]
+    }
+  }
+};
+
+// Maintain backward compatability by also exporting mixin as `dataVisColors`
+var dataVisColors = PxColorsBehavior.dataVisColors;
+
+/*
+  Name:
+  PxColorsBehavior.commonColorsDark
+
+  Description:
+  Polymer behavior that provides the basic color definitions. Colors match (and are generated from) px-colors-design SCSS.
+  This allows access to the color definitions in javascript for applications where CSS is not ideal.
+
+
+  @polymerBehavior PxColorsBehavior.commonColorsDark
+*/
+PxColorsBehavior.commonColorsDark = [PxColorsBehavior.dataVisColors, PxColorsBehavior.baseColors];
+
+// Maintain backward compatability by also exporting mixin as `commonColorsDark`
+var commonColorsDark = PxColorsBehavior.commonColorsDark;
+
+</script>

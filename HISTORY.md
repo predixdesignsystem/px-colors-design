@@ -1,7 +1,28 @@
-v0.3.2
+v0.3.8
 ==================
 * ensure dev set orders can override also when not using a style
 * fix reference issue causing the dataviscolors object to be shared across instances
+
+v0.3.7
+==================
+* added 'Dark' to the end of the property names in color-dark.html 
+
+v0.3.6
+==================
+* updated to new demo using px-demo classes
+* added colors-dark.html 
+
+v0.3.4
+==================
+* updated to cool grays
+
+v0.3.3
+==================
+* changing ghp.sh to account for Alpha releases
+
+v0.3.2
+==================
+* added _settings.colors-dark.scss 
 
 v0.3.1
 ==================

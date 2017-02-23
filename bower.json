@@ -1,6 +1,6 @@
 {
   "name": "px-colors-design",
-  "version": "0.3.2",
+  "version": "0.3.8",
   "authors": [
     "General Electric"
   ],
@@ -18,11 +18,19 @@
     "node_modules",
     "bower_components",
     "sass",
-    ".github",
+    "*.md",
+    "scripts",
+    "github",
+    "gulpfile.js",
+    "monogram-wdmk.png",
+    "wct.conf.json",
+    "test",
     "OSS_Notice.pdf"
   ],
   "devDependencies": {
-    "px-sass-doc": "^0.3.0",
-    "px-starter-kit-design": "^0.7.0"
+    "px-starter-kit-design": "^0.7.0",
+    "px-sass-doc": "^0.4.3",
+    "px-dark-theme": "^1.0.1",
+    "px-dark-demo-theme": "^1.0.3"
   }
 }

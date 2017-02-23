@@ -1,0 +1,205 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+
+  <!-- Common demo imports -->
+  <link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
+  <link rel="import" href="../css/px-colors-design-demo-styles.html" />
+  <link rel="import" href="../colors-dark.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="local-element-demo-dark">
+  <template>  
+  <!-- 0: Import the styles-->
+  <style include="px-colors-design-demo-styles" is="custom-style"></style>
+
+<!-- 1: Describe Module -->
+<px-sass-doc
+  module-name="px-colors-design"
+  description="The Dark Colors module assigns Sass variables for the Predix UI dark color palette."
+  layer="settings"
+  sassdoc-path="sassdoc.json"
+  dependencies='[]'
+  selected-options="{{selectedOptions}}"
+  hide-demo-container="true">
+
+<!-- 2: Set Options -->
+<!-- N/A -->
+
+<!-- 3: Make HTML Demo -->
+<!-- N/A -->
+
+<!-- 4: Set Import Slot -->
+<!-- N/A -->
+
+<!-- 5: Set Usage HTML -->
+<section data-slot="usage">
+<p>
+  <strong>Sass Variable</strong><br/>
+  Once installed in your project, you can refer to any of the Sass color variables from any of your custom Sass code:
+</p>
+
+```
+background-color: $d-black;
+```
+
+<p class="u-mt">
+  <strong>Polymer Behavior</strong><br/>
+  This component can also be installed as a Polymer behavior. After you install it with Bower, reference it in your project:
+</p>
+
+```
+<!-- Import behavior in the document head (remove from comment): -->
+<!--<link rel="import" href="../px-colors-design/colors-dark.html" /> -->
+
+
+<!-- add the variable as a behavior: -->
+<!-- script>
+Polymer({
+  is: 'px-my-component',
+  behaviors: [commonColorsDark],
+  //...
+});
+</script> -->
+```
+
+<p class="u-mt">
+  <strong>JavaScript Variable</strong><br/>
+  Alternatively, if you are not using Polymer in your project, you can access the JavaScript variables directly. After install/import:
+</p>
+
+```
+var primaryBlue = baseColors.properties.colorsDark.value.d-primary-blue;
+var dvPink = dataVisColors.properties.dataVisColorsDark.value.d-dv-basic-pink;
+```
+</section>
+
+<section data-slot="intro">
+# Predix UI's palette
+<p class="u-mb++">The Predix UI color palette is broken down into the following categories:</p>
+
+<div class="flex flex--wrap">
+
+  <div class="u-mr++ u-mb++">
+    <div class="u-mb"><strong>Monochromatic</strong></div>
+    <div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-black}}"></div> $d-black</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray20}}"></div> $d-gray20</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray19}}"></div> $d-gray19</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray18}}"></div> $d-gray18</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray17}}; border: 0.5px solid {{colorsDark.d-black}}"></div> $d-gray17</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray16}}"></div> $d-gray16</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray15}}"></div> $d-gray15</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray14}}"></div> $d-gray14</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray13}}"></div> $d-gray13</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray12}}"></div> $d-gray12</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray11}}"></div> $d-gray11</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray10}}"></div> $d-gray10</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray9}}"></div> $d-gray9</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray8}}"></div> $d-gray8</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray7}}"></div> $d-gray7</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray6}}"></div> $d-gray6</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray5}}"></div> $d-gray5</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray4}}"></div> $d-gray4</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray3}}"></div> $d-gray3</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray2}}"></div> $d-gray2</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray1}}"></div> $d-gray1</div>
+      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-white}}"></div> $d-white</div>
+    </div>
+  </div>
+
+  <div class="u-mr++ u-mb++">
+    <div class="u-mb"><strong>Primary Blue</strong></div>
+    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-primary-blue}}"></div> $d-primary-blue</div>
+    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-primary-blue-hover}}"></div> $d-primary-blue-hover</div>
+    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-primary-blue-pressed}}"></div> $d-primary-blue-pressed</div>
+    <div class="u-mb u-mt+"><strong>Select Blue</strong></div>
+    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-select-blue-default}}"></div> $d-select-blue-default</div>
+    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-select-blue-hover}}"></div> $d-select-blue-hover</div>
+    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-select-blue-pressed}}"></div> $d-select-blue-pressed</div>
+    <div class="u-mb u-mt+"><strong>Alerts</strong></div>
+    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-alert-red}}"></div> $d-alert-red</div>
+    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-alert-orange}}"></div> $d-alert-orange</div>
+    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-alert-yellow}}"></div> $d-alert-yellow</div>
+    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-alert-blue}}"></div> $d-alert-blue</div>
+    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-alert-green}}"></div> $d-alert-green</div>
+  </div>
+
+  <div class="u-mr++ u-mb++">
+    <div class="u-mb"><strong>Data Visualization (Basic)</strong></div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-1}}"></div> $d-dv-basic-1</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-2}}"></div> $d-dv-basic-2</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-3}}"></div> $d-dv-basic-3</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-4}}"></div> $d-dv-basic-4</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-5}}"></div> $d-dv-basic-5</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-6}}"></div> $d-dv-basic-6</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-7}}"></div> $d-dv-basic-7</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-8}}"></div> $d-dv-basic-8</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-9}}"></div> $d-dv-basic-9</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-10}}"></div> $d-dv-basic-10</div>
+  </div>
+
+  <div class="u-mr++ u-mb++">
+    <div class="u-mb"><strong>Data Visualization (Bright)</strong></div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-1}}"></div> $d-dv-bright-1</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-2}}"></div> $d-dv-bright-2</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-3}}"></div> $d-dv-bright-3</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-4}}"></div> $d-dv-bright-4</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-5}}"></div> $d-dv-bright-5</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-6}}"></div> $d-dv-bright-6</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-7}}"></div> $d-dv-bright-7</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-8}}"></div> $d-dv-bright-8</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-9}}"></div> $d-dv-bright-9</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-10}}"></div> $d-dv-bright-10</div>
+  </div>
+
+  <div class="u-mr++ u-mb++">
+    <div class="u-mb"><strong>Data Visualization (Muted)</strong></div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-1}}"></div> $d-dv-muted-1</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-2}}"></div> $d-dv-muted-2</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-3}}"></div> $d-dv-muted-3</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-4}}"></div> $d-dv-muted-4</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-5}}"></div> $d-dv-muted-5</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-6}}"></div> $d-dv-muted-6</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-7}}"></div> $d-dv-muted-7</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-8}}"></div> $d-dv-muted-8</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-9}}"></div> $d-dv-muted-9</div>
+    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-10}}"></div> $d-dv-muted-10</div>
+  </div>
+
+</div>
+</section>
+
+</px-sass-doc>
+</template>
+
+</dom-module>
+
+<!-- 6: Handle selectedOptions, update demo -->
+<script>
+  Polymer({
+    is: 'local-element-demo-dark',
+    behaviors: [commonColorsDark],
+
+    attached : function(){
+      var boundHandler = this._handleOptionsUpdated.bind(this); 
+      this.addEventListener('px-sass-doc-options-updated', boundHandler)
+    },
+    
+    detached : function(){
+      this.removeEventListener('px-sass-doc-options-updated', boundHandler);
+    },
+
+    _handleOptionsUpdated : function(evt) {
+      //call functions created below
+      this.importCode = this._importCode();
+
+      // Wait, then tell the highlighter to run after dom-if restamps
+      this.async(function(){ this.fire('px-sass-doc-demo-updated', {}) }, 10);
+    },
+
+    _importCode : function() {
+      return '@import "dark.scss";';
+    },
+
+  });
+</script>
