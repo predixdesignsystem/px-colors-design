@@ -1,3 +1,7 @@
+v0.3.9
+==================
+* Added event to fire at the end of syncCSSTheme
+
 v0.3.8
 ==================
 * ensure dev set orders can override also when not using a style
@@ -5,12 +9,12 @@ v0.3.8
 
 v0.3.7
 ==================
-* added 'Dark' to the end of the property names in color-dark.html 
+* added 'Dark' to the end of the property names in color-dark.html
 
 v0.3.6
 ==================
 * updated to new demo using px-demo classes
-* added colors-dark.html 
+* added colors-dark.html
 
 v0.3.4
 ==================
@@ -22,7 +26,7 @@ v0.3.3
 
 v0.3.2
 ==================
-* added _settings.colors-dark.scss 
+* added _settings.colors-dark.scss
 
 v0.3.1
 ==================
