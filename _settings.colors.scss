@@ -60,6 +60,7 @@ $white                          : rgb(255,255,255);
 $primary-default                : rgb(45,109,230);
 $primary-hover                  : rgb(53,115,197);
 $primary-pressed                : rgb(43,94,162);
+$primary-light                  : rgb(238,251,255);
 
 /**
  * LIGHT Selection Palette
@@ -67,6 +68,7 @@ $primary-pressed                : rgb(43,94,162);
 $select-default                 : rgb(10,158,193);
 $select-hover                   : rgb(9,134,164);
 $select-pressed                 : rgb(8,110,135);
+$select-light                   : rgb(230,251,255);
 
 
 /**
@@ -75,38 +77,44 @@ $select-pressed                 : rgb(8,110,135);
 $d-primary-default              : rgb(0,115,165);
 $d-primary-hover                : rgb(0,79,114);
 $d-primary-pressed              : rgb(0,66,102);
+$d-primary-light                : rgb(217,248,255);
 
 /**
  * DARK Selection Palette
  */
-$select-default                 : rgb(11,109,122);
-$select-hover                   : rgb(6,87,105);
-$select-pressed                 : rgb(6,69,76);
+$d-select-default               : rgb(11,109,122);
+$d-select-hover                 : rgb(6,87,105);
+$d-select-pressed               : rgb(6,69,76);
+$d-select-light                 : rgb(217,254,255);
 
 
 /**
  * Alerts and Status
  */
-$alert-red-dark                 : rgb(180,0,0);
-$alert-red-medium               : rgb(243,67,54);
-$alert-red-light                : rgb(249,165,159);
+$status-red1                    : rgb(255,236,236);
+$status-red2                    : rgb(249,165,159);
+$status-red3                    : rgb(243,67,54);
+$status-red4                    : rgb(180,0,0);
 
-$alert-orange-dark              : rgb(204,85,0);
-$alert-orange-medium            : rgb(255,139,58);
-$alert-orange-light             : rgb(255,196,153);
+$status-orange1                 : rgb(255,240,230);
+$status-orange2                 : rgb(255,196,153);
+$status-orange3                 : rgb(255,139,58);
+$status-orange4                 : rgb(204,85,0);
 
-$alert-yellow-dark              : rgb(163,128,1);
-$alert-yellow-medium            : rgb(254,198,0);
-$alert-yellow-light             : rgb(255,224,112);
+$status-yellow1                 : rgb(255,246,217);
+$status-yellow2                 : rgb(255,224,112);
+$status-yellow3                 : rgb(254,198,0);
+$status-yellow4                 : rgb(163,128,1);
 
-$alert-blue-dark                : rgb(12,66,111);
-$alert-blue-medium              : rgb(20,121,201);
-$alert-blue-light               : rgb(88,171,238);
+$status-blue1                   : rgb(230,245,255);
+$status-blue2                   : rgb(88,171,238);
+$status-blue3                   : rgb(20,121,201);
+$status-blue4                   : rgb(12,66,111);
 
-$alert-green-dark               : rgb(66,88,14);
-$alert-green-medium             : rgb(127,174,27);
-$alert-green-light              : rgb(180,227,79);
-
+$status-green1                  : rgb(236,255,238);
+$status-green2                  : rgb(180,227,79);
+$status-green3                  : rgb(127,174,27);
+$status-green4                  : rgb(66,88,14);
 
 
 /**
