@@ -8,7 +8,7 @@
 
 <!-- Demo DOM module -->
 <dom-module id="local-element-demo">
-  <template>  
+  <template>
   <!-- 0: Import the styles-->
   <style include="px-colors-design-demo-styles" is="custom-style"></style>
 
@@ -80,37 +80,82 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
 <div class="flex flex--wrap">
 
   <div class="u-mr++ u-mb++">
-    <div class="u-mb"><strong>Monochromatic</strong></div>
+    <div class="u-mb epsilon">Neutral Palette</div>
     <div>
-      <div class="color"><div class="chip" style$="background-color:{{colors.black}}"></div> $black</div>
-      <div class="color"><div class="chip" style$="background-color:{{colors.gray10}}"></div> $gray10</div>
-      <div class="color"><div class="chip" style$="background-color:{{colors.gray9}}"></div> $gray9</div>
-      <div class="color"><div class="chip" style$="background-color:{{colors.gray8}}"></div> $gray8</div>
-      <div class="color"><div class="chip" style$="background-color:{{colors.gray7}}"></div> $gray7</div>
-      <div class="color"><div class="chip" style$="background-color:{{colors.gray6}}"></div> $gray6</div>
-      <div class="color"><div class="chip" style$="background-color:{{colors.gray5}}"></div> $gray5</div>
-      <div class="color"><div class="chip" style$="background-color:{{colors.gray4}}"></div> $gray4</div>
-      <div class="color"><div class="chip" style$="background-color:{{colors.gray3}}"></div> $gray3</div>
-      <div class="color"><div class="chip" style$="background-color:{{colors.gray2}}"></div> $gray2</div>
-      <div class="color"><div class="chip" style$="background-color:{{colors.gray1}}"></div> $gray1</div>
-      <div class="color"><div class="chip" style$="background-color:{{colors.white}}; border: 0.5px solid {{colors.gray4}}"></div> $white</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.white}}; border: 0.5px solid {{colors.gray4}}">w</div> $white</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray1}}">1</div> $gray1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray2}}">2</div> $gray2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray3}}">3</div> $gray3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray4}}">4</div> $gray4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray5}}">5</div> $gray5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray6}}">6</div> $gray6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray7}}">7</div> $gray7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray8}}">8</div> $gray8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray9}}">9</div> $gray9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray10}}">10</div> $gray10</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray11}}">11</div> $gray11</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray12}}">12</div> $gray12</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray13}}">13</div> $gray13</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray14}}">14</div> $gray14</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray15}}">15</div> $gray15</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray16}}">16</div> $gray16</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray17}}">17</div> $gray17</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray18}}">18</div> $gray18</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray19}}">19</div> $gray19</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.gray20}}">20</div> $gray20</div>
+      <div class="color"><div class="swatch" style$="background-color:{{colors.black}}">b</div> $black</div>
     </div>
   </div>
 
   <div class="u-mr++ u-mb++">
-    <div class="u-mb"><strong>Primary Blue</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.primary-blue}}"></div> $primary-blue</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.primary-blue-hover}}"></div> $primary-blue-hover</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.primary-blue-pressed}}"></div> $primary-blue-pressed</div>
-    <div class="u-mb u-mt+"><strong>Select Blue</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.select-blue-default}}"></div> $select-blue-default</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.select-blue-hover}}"></div> $select-blue-hover</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.select-blue-pressed}}"></div> $select-blue-pressed</div>
-    <div class="u-mb u-mt+"><strong>Alerts</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.alert-red}}"></div> $alert-red</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.alert-orange}}"></div> $alert-orange</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.alert-yellow}}"></div> $alert-yellow</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.alert-blue}}"></div> $alert-blue</div>
+    <div class="u-mb"><strong>Light </strong>Actionable Palette</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.primary-default}}"></div> $primary-default</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.primary-hover}}"></div> $primary-hover</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.primary-pressed}}"></div> $primary-pressed</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.primary-light}}"></div> $primary-light</div>
+    <div class="u-mb u-mt+"><strong>Light </strong>Selection Palette</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.select-default}}"></div> $select-default</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.select-hover}}"></div> $select-hover</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.select-pressed}}"></div> $select-pressed</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.select-light}}"></div> $select-light</div>
+    <div class="u-mb u-mt+"><strong>Dark </strong>Actionable Palette</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.d-primary-default}}"></div> $d-primary-default</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.d-primary-hover}}"></div> $d-primary-hover</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.d-primary-pressed}}"></div> $d-primary-pressed</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.d-primary-light}}"></div> $d-primary-light</div>
+    <div class="u-mb u-mt+"><strong>Dark </strong>Selection Palette</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.d-select-default}}"></div> $d-select-default</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.d-select-hover}}"></div> $d-select-hover</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.d-select-pressed}}"></div> $d-select-pressed</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.d-select-light}}"></div> $d-select-light</div>
+  </div>
+
+  <div class="u-mr++ u-mb++">
+    <div class="u-mb u-mt+"><strong>Alerts and Status</strong></div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-red1}}">1</div> $status-red1</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-red2}}">2</div> $status-red2</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-red3}}">3</div> $status-red3</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-red4}}">4</div> $status-red4</div>
+
+    <!-- <div class="color"><div class="swatch" style$="background-color:{{colors.status-orange1}}">1</div> $status-orange1</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-orange2}}">2</div> $status-orange2</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-orange3}}">3</div> $status-orange3</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-orange4}}">4</div> $status-orange4</div>
+
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-yellow1}}">1</div> $status-yellow1</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-yellow2}}">2</div> $status-yellow2</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-yellow3}}">3</div> $status-yellow3</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-yellow4}}">4</div> $status-yellow4</div>
+
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-blue1}}">1</div> $status-blue1</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-blue2}}">2</div> $status-blue2</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-blue3}}">3</div> $status-blue3</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-blue4}}">4</div> $status-blue4</div>
+
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-green1}}">1</div> $status-green1</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-green2}}">2</div> $status-green2</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-green3}}">3</div> $status-green3</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-green4}}">4</div> $status-green4</div> -->
   </div>
 
   <div class="u-mr++ u-mb++">

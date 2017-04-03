@@ -35,7 +35,6 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
 // Component
 .color {
   line-height: 30px;
-  margin-bottom: 10px;
 }
 .chip {
   float: left;
@@ -43,6 +42,12 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
   width: 30px;
   height: 30px;
   border-radius: 30px;
+}
+.swatch {
+  float: left;
+  margin-right: 10px;
+  width: 300px;
+  height: 30px;
 }
 
 // Trumps
