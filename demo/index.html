@@ -107,7 +107,7 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
     </div>
   </div>
 
-  <div class="u-mr++ u-mb++">
+  <div class="u-mr++ u-ml++ u-mb++">
     <div class="u-mb"><strong>Light </strong>Actionable Palette</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.primary-default}}"></div> $primary-default</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.primary-hover}}"></div> $primary-hover</div>
@@ -131,93 +131,257 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
   </div>
 
   <div class="u-mr++ u-mb++">
-    <div class="u-mb u-mt+"><strong>Alerts and Status</strong></div>
+    <div class="u-mb u-mt+">Alerts and Status</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-red1}}">1</div> $status-red1</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-red2}}">2</div> $status-red2</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-red3}}">3</div> $status-red3</div>
-    <div class="color"><div class="swatch" style$="background-color:{{colors.status-red4}}">4</div> $status-red4</div>
-
-    <!-- <div class="color"><div class="swatch" style$="background-color:{{colors.status-orange1}}">1</div> $status-orange1</div>
+    <div class="color u-mb++"><div class="swatch" style$="background-color:{{colors.status-red4}}">4</div> $status-red4</div>
+    <div class="color"><div class="swatch" style$="background-color:{{colors.status-orange1}}">1</div> $status-orange1</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-orange2}}">2</div> $status-orange2</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-orange3}}">3</div> $status-orange3</div>
-    <div class="color"><div class="swatch" style$="background-color:{{colors.status-orange4}}">4</div> $status-orange4</div>
-
+    <div class="color u-mb++"><div class="swatch" style$="background-color:{{colors.status-orange4}}">4</div> $status-orange4</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-yellow1}}">1</div> $status-yellow1</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-yellow2}}">2</div> $status-yellow2</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-yellow3}}">3</div> $status-yellow3</div>
-    <div class="color"><div class="swatch" style$="background-color:{{colors.status-yellow4}}">4</div> $status-yellow4</div>
-
+    <div class="color u-mb++"><div class="swatch" style$="background-color:{{colors.status-yellow4}}">4</div> $status-yellow4</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-blue1}}">1</div> $status-blue1</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-blue2}}">2</div> $status-blue2</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-blue3}}">3</div> $status-blue3</div>
-    <div class="color"><div class="swatch" style$="background-color:{{colors.status-blue4}}">4</div> $status-blue4</div>
-
+    <div class="color u-mb++"><div class="swatch" style$="background-color:{{colors.status-blue4}}">4</div> $status-blue4</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-green1}}">1</div> $status-green1</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-green2}}">2</div> $status-green2</div>
     <div class="color"><div class="swatch" style$="background-color:{{colors.status-green3}}">3</div> $status-green3</div>
-    <div class="color"><div class="swatch" style$="background-color:{{colors.status-green4}}">4</div> $status-green4</div> -->
+    <div class="color u-mb++"><div class="swatch" style$="background-color:{{colors.status-green4}}">4</div> $status-green4</div>
   </div>
 
-  <div class="u-mr++ u-mb++">
-    <div class="u-mb"><strong>Data Visualization (Regular)</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-basic-blue}}"></div> $dv-basic-blue</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-basic-orange}}"></div> $dv-basic-orange</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-basic-green}}"></div> $dv-basic-green</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-basic-pink}}"></div> $dv-basic-pink</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-basic-brown}}"></div> $dv-basic-brown</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-basic-purple}}"></div> $dv-basic-purple</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-basic-yellow}}"></div> $dv-basic-yellow</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-basic-red}}"></div> $dv-basic-red</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-basic-gray}}"></div> $dv-basic-gray</div>
+  <div class="u-mr++ u-ml++ u-mb++">
+    <div class="u-mb epsilon">Dataviz Color Sets</div>
+      <div class="u-mb u-mt+">Regular Set</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue5}}"></div> $blue5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange5}}"></div> $orange5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green5}}"></div> $green5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink5}}"></div> $pink5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown6}}"></div> $brown6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple4}}"></div> $purple4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow5}}"></div> $yellow5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red6}}"></div> $red6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray8}}"></div> $neutral-gray8</div>
+      <div class="u-mb u-mt+">Light Set</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue3}}"></div> $blue3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange3}}"></div> $orange3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green3}}"></div> $green3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink1}}"></div> $pink1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown4}}"></div> $brown4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple3}}"></div> $purple3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow3}}"></div> $yellow3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red3}}"></div> $red3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray5}}"></div> $neutral-gray5</div>
+      <div class="u-mb u-mt+">Dark Set</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue8}}"></div> $blue8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange7}}"></div> $orange7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green6}}"></div> $green6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink5}}"></div> $pink5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown7}}"></div> $brown7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple7}}"></div> $purple7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow6}}"></div> $yellow6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red6}}"></div> $red6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray10}}"></div> $neutral-gray10</div>
   </div>
 
-  <div class="u-mr++ u-mb++">
-    <div class="u-mb"><strong>Data Visualization (Light)</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-light-blue}}"></div> $dv-light-blue</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-light-orange}}"></div> $dv-light-orange</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-light-green}}"></div> $dv-light-green</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-light-pink}}"></div> $dv-light-pink</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-light-brown}}"></div> $dv-light-brown</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-light-purple}}"></div> $dv-light-purple</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-light-yellow}}"></div> $dv-light-yellow</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-light-red}}"></div> $dv-light-red</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-light-gray}}"></div> $dv-light-gray</div>
-  </div>
+  <div class="u-mr++ u-ml++ u-mb++">
+    <div class="u-mb epsilon">Data Visualization Colors</div>
+      <div><div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink6}}">PINK</div></div></div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue5}}"></div> $blue5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange5}}"></div> $orange5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green5}}"></div> $green5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink5}}"></div> $pink5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown6}}"></div> $brown6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple4}}"></div> $purple4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow5}}"></div> $yellow5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red6}}"></div> $red6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray8}}"></div> $neutral-gray8</div>
+</div>
 
   <div class="u-mr++ u-mb++">
-    <div class="u-mb"><strong>Data Visualization (Dark)</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-dark-blue}}"></div> $dv-dark-blue</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-dark-orange}}"></div> $dv-dark-orange</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-dark-green}}"></div> $dv-dark-green</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-dark-pink}}"></div> $dv-dark-pink</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-dark-brown}}"></div> $dv-dark-brown</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-dark-purple}}"></div> $dv-dark-purple</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-dark-yellow}}"></div> $dv-dark-yellow</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-dark-red}}"></div> $dv-dark-red</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColors.dv-dark-gray}}"></div> $dv-dark-gray</div>
-  </div>
-
-  <div class="u-mr++ u-mb++">
-    <div class="u-mb"><strong>GE Brand Colors</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.red}}"></div> $red</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.red-light}}"></div> $red-light</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.red-dark}}"></div> $red-dark</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.orange}}"></div> $orange</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.orange-light}}"></div> $orange-light</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.orange-dark}}"></div> $orange-dark</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.yellow}}"></div> $yellow</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.yellow-light}}"></div> $yellow-light</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.yellow-dark}}"></div> $yellow-dark</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.green}}"></div> $green</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.green-light}}"></div> $green-light</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.green-dark}}"></div> $green-dark</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.blue}}"></div> $blue</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.blue-light}}"></div> $blue-light</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.blue-dark}}"></div> $blue-dark</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.purple}}"></div> $purple</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.purple-light}}"></div> $purple-light</div>
-    <div class="color"><div class="chip" style$="background-color:{{colors.purple-dark}}"></div> $purple-dark</div>
-  </div>
+    <div class="u-mb epsilon">Data Visualization Colors</div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.orange6}}">Orange</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange1}}"></div> $orange1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange2}}"></div> $orange2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange3}}"></div> $orange3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange4}}"></div> $orange4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange5}}"></div> $orange5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange6}}"></div> $orange6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange7}}"></div> $orange7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange8}}"></div> $orange8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange9}}"></div> $orange9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.orange10}}"></div> $orange10</div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.yellow6}}">Yellow</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow1}}"></div> $yellow1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow2}}"></div> $yellow2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow3}}"></div> $yellow3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow4}}"></div> $yellow4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow5}}"></div> $yellow5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow6}}"></div> $yellow6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow7}}"></div> $yellow7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow8}}"></div> $yellow8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow9}}"></div> $yellow9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow10}}"></div> $yellow10</div>
+    <div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.yellow-green5}}">Yellow-Green</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow-green1}}"></div> $yellow-green1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow-green2}}"></div> $yellow-green2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow-green3}}"></div> $yellow-green3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow-green4}}"></div> $yellow-green4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow-green5}}"></div> $yellow-green5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow-green6}}"></div> $yellow-green6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow-green7}}"></div> $yellow-green7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow-green8}}"></div> $yellow-green8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow-green9}}"></div> $yellow-green9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.yellow-green10}}"></div> $yellow-green10</div>
+    </div>
+    <div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.green6}}">Green</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green1}}"></div> $green1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green2}}"></div> $green2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green3}}"></div> $green3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green4}}"></div> $green4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green5}}"></div> $green5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green6}}"></div> $green6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green7}}"></div> $green7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green8}}"></div> $green8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green9}}"></div> $green9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.green10}}"></div> $green10</div>
+    </div>
+    <div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.teal5}}">Teal</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.teal1}}"></div> $teal1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.teal2}}"></div> $teal2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.teal3}}"></div> $teal3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.teal4}}"></div> $teal4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.teal5}}"></div> $teal5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.teal6}}"></div> $teal6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.teal7}}"></div> $teal7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.teal8}}"></div> $teal8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.teal9}}"></div> $teal9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.teal10}}"></div> $teal10</div>
+    </div>
+    <div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.aqua6}}">Aqua</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.aqua1}}"></div> $aqua1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.aqua2}}"></div> $aqua2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.aqua3}}"></div> $aqua3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.aqua4}}"></div> $aqua4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.aqua5}}"></div> $aqua5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.aqua6}}"></div> $aqua6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.aqua7}}"></div> $aqua7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.aqua8}}"></div> $aqua8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.aqua9}}"></div> $aqua9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.aqua10}}"></div> $aqua10</div>
+    </div>
+    <div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.cyan6}}">Cyan</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.cyan1}}"></div> $cyan1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.cyan2}}"></div> $cyan2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.cyan3}}"></div> $cyan3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.cyan4}}"></div> $cyan4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.cyan5}}"></div> $cyan5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.cyan6}}"></div> $cyan6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.cyan7}}"></div> $cyan7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.cyan8}}"></div> $cyan8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.cyan9}}"></div> $cyan9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.cyan10}}"></div> $cyan10</div>
+    </div>
+    <div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.blue6}}">Blue</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue1}}"></div> $blue1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue2}}"></div> $blue2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue3}}"></div> $blue3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue4}}"></div> $blue4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue5}}"></div> $blue5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue6}}"></div> $blue6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue7}}"></div> $blue7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue8}}"></div> $blue8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue9}}"></div> $blue9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.blue10}}"></div> $blue10</div>
+    </div>
+    <div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.violet6}}">Violet</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.violet1}}"></div> $violet1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.violet2}}"></div> $violet2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.violet3}}"></div> $violet3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.violet4}}"></div> $violet4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.violet5}}"></div> $violet5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.violet6}}"></div> $violet6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.violet7}}"></div> $violet7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.violet8}}"></div> $violet8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.violet9}}"></div> $violet9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.violet10}}"></div> $violet10</div>
+    </div>
+    <div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.purple7}}">Purple</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple1}}"></div> $purple1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple2}}"></div> $purple2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple3}}"></div> $purple3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple4}}"></div> $purple4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple5}}"></div> $purple5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple6}}"></div> $purple6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple7}}"></div> $purple7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple8}}"></div> $purple8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple9}}"></div> $purple9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.purple10}}"></div> $purple10</div>
+    </div>
+    <div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.pink5}}">Pink</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink1}}"></div> $pink1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink2}}"></div> $pink2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink3}}"></div> $pink3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink4}}"></div> $pink4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink5}}"></div> $pink5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink6}}"></div> $pink6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink7}}"></div> $pink7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink8}}"></div> $pink8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink9}}"></div> $pink9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.pink10}}"></div> $pink10</div>
+    </div>
+    <div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.red}}">Red</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red1}}"></div> $red1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red2}}"></div> $red2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red3}}"></div> $red3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red4}}"></div> $red4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red5}}"></div> $red5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red6}}"></div> $red6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red7}}"></div> $red7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red8}}"></div> $red8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red9}}"></div> $red9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.red10}}"></div> $red10</div>
+    </div>
+    <div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.brown6}}">Brown</div>
+      <div class="color "><div class="swatch" style$="background-color:{{dataVisColors.brown1}}"></div> $brown1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown2}}"></div> $brown2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown3}}"></div> $brown3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown4}}"></div> $brown4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown5}}"></div> $brown5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown6}}"></div> $brown6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown7}}"></div> $brown7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown8}}"></div> $brown8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown9}}"></div> $brown9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.brown10}}"></div> $brown10</div>
+    </div>
+    <div>
+      <div class="swatch u-mb u-mt+" style$="background-color:{{dataVisColors.neutral-gray5}}">Neutral Gray</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray1}}"></div> $neutral-gray1</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray2}}"></div> $neutral-gray2</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray3}}"></div> $neutral-gray3</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray4}}"></div> $neutral-gray4</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray5}}"></div> $neutral-gray5</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray6}}"></div> $neutral-gray6</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray7}}"></div> $neutral-gray7</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray8}}"></div> $neutral-gray8</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray9}}"></div> $neutral-gray9</div>
+      <div class="color"><div class="swatch" style$="background-color:{{dataVisColors.neutral-gray10}}"></div> $neutral-gray10</div>
+    </div>
 
 </div>
 </section>
