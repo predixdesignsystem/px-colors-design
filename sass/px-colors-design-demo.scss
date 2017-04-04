@@ -33,23 +33,23 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
 @import "px-typography-design/_base.typography.scss";
 
 // Component
+.title {
+  text-transform: uppercase;
+  color: $gray13;
+}
+
 .color {
   line-height: 30px;
-}
-.chip {
-  float: left;
-  margin-right: 10px;
-  width: 30px;
   height: 30px;
-  border-radius: 30px;
 }
+
 .swatch {
   float: left;
   margin-right: 10px;
   width: 300px;
   height: 30px;
   padding-left: 8px;
-  padding-top: 6px;
+  padding-top: 5px;
 }
 
 .swatch--light {
@@ -58,6 +58,10 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
 
 .swatch--dark {
   color: $white;
+}
+
+.swatch--title {
+  text-transform: uppercase;
 }
 
 // Trumps
