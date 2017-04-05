@@ -31,6 +31,7 @@
     "px-starter-kit-design": "^0.7.0",
     "px-sass-doc": "^0.4.3",
     "px-dark-theme": "^1.0.1",
-    "px-dark-demo-theme": "^1.0.3"
+    "px-dark-demo-theme": "^1.0.3",
+    "px-layout-design": "^0.4.6"
   }
 }

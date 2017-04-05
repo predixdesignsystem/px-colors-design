@@ -32,17 +32,49 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
 @import "px-viewport-design/_base.viewport.scss";
 @import "px-typography-design/_base.typography.scss";
 
+// Objects
+$inuit-enable-layout--huge : true;
+@import "px-layout-design/_objects.layout.scss";
+
 // Component
+.title {
+  text-transform: uppercase;
+  color: $gray13;
+}
+
 .color {
   line-height: 30px;
-  margin-bottom: 10px;
-}
-.chip {
-  float: left;
-  margin-right: 10px;
-  width: 30px;
   height: 30px;
-  border-radius: 30px;
+  white-space: nowrap;
+  display: flex;
+}
+
+.colorName {
+  width: 140px;
+  text-align: left;
+}
+
+.swatch {
+  margin-right: 10px;
+  height: 30px;
+  padding-left: 8px;
+  flex: 1 0 auto;
+}
+
+.swatch--light {
+  color: $black;
+}
+
+.swatch--dark {
+  color: $white;
+}
+
+.swatch--title {
+  text-transform: uppercase;
+}
+
+.hugeMargin {
+  margin-top: $inuit-base-spacing-unit*5;
 }
 
 // Trumps
