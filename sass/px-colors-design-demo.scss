@@ -32,6 +32,10 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
 @import "px-viewport-design/_base.viewport.scss";
 @import "px-typography-design/_base.typography.scss";
 
+// Objects
+$inuit-enable-layout--huge : true;
+@import "px-layout-design/_objects.layout.scss";
+
 // Component
 .title {
   text-transform: uppercase;
@@ -41,14 +45,21 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
 .color {
   line-height: 30px;
   height: 30px;
+  white-space: nowrap;
+  display: flex;
+}
+
+.colorName {
+  width: 140px;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .swatch {
-  float: left;
   margin-right: 10px;
-  width: 300px;
   height: 30px;
   padding-left: 8px;
+  flex: 1 0 auto;
 }
 
 .swatch--light {
@@ -61,6 +72,10 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
 
 .swatch--title {
   text-transform: uppercase;
+}
+
+.hugeMargin {
+  margin-top: $inuit-base-spacing-unit*5;
 }
 
 // Trumps
