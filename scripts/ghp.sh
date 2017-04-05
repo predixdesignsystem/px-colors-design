@@ -85,7 +85,7 @@ bower install ${REPO_NAME} px-dark-theme px-dark-demo-theme
 yes | cp ${REPO_NAME}/bower.json bower.json
 
 #and run install
-bower install
+bower install --force
 
 # ------------------------------------------------------------------------------
 # BUILD PROJECT
