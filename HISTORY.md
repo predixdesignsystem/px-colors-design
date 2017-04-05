@@ -1,3 +1,7 @@
+v1.0.0
+==================
+* Release the redesigned Predix UI color palette
+
 v0.3.9
 ==================
 * Added event to fire at the end of syncCSSTheme
