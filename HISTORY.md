@@ -1,3 +1,7 @@
+v1.0.1
+==================
+* update dark theme demo
+
 v1.0.0
 ==================
 * Release the redesigned Predix UI color palette

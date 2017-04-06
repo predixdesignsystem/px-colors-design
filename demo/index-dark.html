@@ -4,11 +4,11 @@
   <!-- Common demo imports -->
   <link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
   <link rel="import" href="../css/px-colors-design-demo-styles.html" />
-  <link rel="import" href="../colors-dark.html" />
+  <link rel="import" href="../colors.html" />
 
 <!-- Demo DOM module -->
 <dom-module id="local-element-demo-dark">
-  <template>  
+  <template>
   <!-- 0: Import the styles-->
   <style include="px-colors-design-demo-styles" is="custom-style"></style>
 
@@ -77,94 +77,332 @@ var dvPink = dataVisColors.properties.dataVisColorsDark.value.d-dv-basic-pink;
 # Predix UI's palette
 <p class="u-mb++">The Predix UI color palette is broken down into the following categories:</p>
 
-<div class="flex flex--wrap">
-
-  <div class="u-mr++ u-mb++">
-    <div class="u-mb"><strong>Monochromatic</strong></div>
+<div class="layout layout--huge">
+  <div class="u-mb++ layout__item">
+    <div class="epsilon title u-mb+">Neutral Palette</div>
     <div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-black}}"></div> $d-black</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray20}}"></div> $d-gray20</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray19}}"></div> $d-gray19</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray18}}"></div> $d-gray18</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray17}}; border: 0.5px solid {{colorsDark.d-black}}"></div> $d-gray17</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray16}}"></div> $d-gray16</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray15}}"></div> $d-gray15</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray14}}"></div> $d-gray14</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray13}}"></div> $d-gray13</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray12}}"></div> $d-gray12</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray11}}"></div> $d-gray11</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray10}}"></div> $d-gray10</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray9}}"></div> $d-gray9</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray8}}"></div> $d-gray8</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray7}}"></div> $d-gray7</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray6}}"></div> $d-gray6</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray5}}"></div> $d-gray5</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray4}}"></div> $d-gray4</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray3}}"></div> $d-gray3</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray2}}"></div> $d-gray2</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-gray1}}"></div> $d-gray1</div>
-      <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-white}}"></div> $d-white</div>
+      <div class="color"><span class="swatch swatch--light" style$="background-color:{{colors.white}}; border: 0.5px solid {{colors.gray4}}">w</span><span class="colorName">$white</span></div>
+      <div class="color"><span class="swatch swatch--light" style$="background-color:{{colors.gray1}}">1</span><span class="colorName">$gray1</span></div>
+      <div class="color"><span class="swatch swatch--light" style$="background-color:{{colors.gray2}}">2</span><span class="colorName">$gray2</span></div>
+      <div class="color"><span class="swatch swatch--light" style$="background-color:{{colors.gray3}}">3</span><span class="colorName">$gray3</span></div>
+      <div class="color"><span class="swatch swatch--light" style$="background-color:{{colors.gray4}}">4</span><span class="colorName">$gray4</span></div>
+      <div class="color"><span class="swatch swatch--light" style$="background-color:{{colors.gray5}}">5</span><span class="colorName">$gray5</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray6}}">6</span><span class="colorName">$gray6</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray7}}">7</span><span class="colorName">$gray7</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray8}}">8</span><span class="colorName">$gray8</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray9}}">9</span><span class="colorName">$gray9</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray10}}">10</span><span class="colorName">$gray10</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray11}}">11</span><span class="colorName">$gray11</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray12}}">12</span><span class="colorName">$gray12</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray13}}">13</span><span class="colorName">$gray13</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray14}}">14</span><span class="colorName">$gray14</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray15}}">15</span><span class="colorName">$gray15</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray16}}">16</span><span class="colorName">$gray16</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray17}}">17</span><span class="colorName">$gray17</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray18}}">18</span><span class="colorName">$gray18</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray19}}">19</span><span class="colorName">$gray19</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.gray20}}">20</span><span class="colorName">$gray20</span></div>
+      <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.black}}">b</span> <span class="colorName">$black</span></div>
     </div>
-  </div>
+  </div>  <!-- item -->
 
-  <div class="u-mr++ u-mb++">
-    <div class="u-mb"><strong>Primary Blue</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-primary-blue}}"></div> $d-primary-blue</div>
-    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-primary-blue-hover}}"></div> $d-primary-blue-hover</div>
-    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-primary-blue-pressed}}"></div> $d-primary-blue-pressed</div>
-    <div class="u-mb u-mt+"><strong>Select Blue</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-select-blue-default}}"></div> $d-select-blue-default</div>
-    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-select-blue-hover}}"></div> $d-select-blue-hover</div>
-    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-select-blue-pressed}}"></div> $d-select-blue-pressed</div>
-    <div class="u-mb u-mt+"><strong>Alerts</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-alert-red}}"></div> $d-alert-red</div>
-    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-alert-orange}}"></div> $d-alert-orange</div>
-    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-alert-yellow}}"></div> $d-alert-yellow</div>
-    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-alert-blue}}"></div> $d-alert-blue</div>
-    <div class="color"><div class="chip" style$="background-color:{{colorsDark.d-alert-green}}"></div> $d-alert-green</div>
-  </div>
+  <div class="u-mb++ layout__item">
+    <div class="epsilon title u-mb+"><strong>Light </strong>Actionable Palette</div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.primary-default}}"></span><span class="colorName">$primary-default</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.primary-hover}}"></span><span class="colorName">$primary-hover</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.primary-pressed}}"></span><span class="colorName">$primary-pressed</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.primary-light}}"></span><span class="colorName">$primary-light</span></div>
+    <div class="u-mt++ epsilon title u-mb+"><strong>Light </strong>Selection Palette</div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.select-default}}"></span><span class="colorName">$select-default</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.select-hover}}"></span><span class="colorName">$select-hover</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.select-pressed}}"></span><span class="colorName">$select-pressed</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.select-light}}"></span><span class="colorName">$select-light</span></div>
+    <div class="hugeMargin epsilon title u-mb+"><strong>Dark </strong>Actionable Palette</div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.d-primary-default}}"></span><span class="colorName">$d-primary-default</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.d-primary-hover}}"></span><span class="colorName">$d-primary-hover</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.d-primary-pressed}}"></span><span class="colorName">$d-primary-pressed</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.d-primary-light}}"></span><span class="colorName">$d-primary-light</span></div>
+    <div class="u-mt++ epsilon title u-mb+"><strong>Dark </strong>Selection Palette</div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.d-select-default}}"></span><span class="colorName">$d-select-default</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.d-select-hover}}"></span><span class="colorName">$d-select-hover</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.d-select-pressed}}"></span><span class="colorName">$d-select-pressed</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.d-select-light}}"></span><span class="colorName">$d-select-light</span></div>
+  </div>  <!-- item -->
 
-  <div class="u-mr++ u-mb++">
-    <div class="u-mb"><strong>Data Visualization (Basic)</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-1}}"></div> $d-dv-basic-1</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-2}}"></div> $d-dv-basic-2</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-3}}"></div> $d-dv-basic-3</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-4}}"></div> $d-dv-basic-4</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-5}}"></div> $d-dv-basic-5</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-6}}"></div> $d-dv-basic-6</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-7}}"></div> $d-dv-basic-7</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-8}}"></div> $d-dv-basic-8</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-9}}"></div> $d-dv-basic-9</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-basic-10}}"></div> $d-dv-basic-10</div>
-  </div>
+  <div class="u-mb++ layout__item">
+    <div class="epsilon title u-mb+">Alerts and Status</div>
+    <div class="color"><span class="swatch swatch--light" style$="background-color:{{colors.status-red1}}">1</span><span class="colorName">$status-red1</span></div>
+    <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-red2}}">2</span><span class="colorName">$status-red2</span></div>
+    <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-red3}}">3</span><span class="colorName">$status-red3</span></div>
+    <div class="color u-mb++"><span class="swatch swatch--dark" style$="background-color:{{colors.status-red4}}">4</span><span class="colorName">$status-red4</span></div>
+    <div class="color hugeMargin"><span class="swatch swatch--light" style$="background-color:{{colors.status-orange1}}">1</span><span class="colorName">$status-orange1</span></div>
+    <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-orange2}}">2</span><span class="colorName">$status-orange2</span></div>
+    <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-orange3}}">3</span><span class="colorName">$status-orange3</span></div>
+    <div class="color u-mb++"><span class="swatch swatch--dark" style$="background-color:{{colors.status-orange4}}">4</span><span class="colorName">$status-orange4</span></div>
+    <div class="color hugeMargin"><span class="swatch swatch--light" style$="background-color:{{colors.status-yellow1}}">1</span><span class="colorName">$status-yellow1</span></div>
+    <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-yellow2}}">2</span><span class="colorName">$status-yellow2</span></div>
+    <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-yellow3}}">3</span><span class="colorName">$status-yellow3</span></div>
+    <div class="color u-mb++"><span class="swatch swatch--dark" style$="background-color:{{colors.status-yellow4}}">4</span><span class="colorName">$status-yellow4</span></div>
+    <div class="color hugeMargin"><span class="swatch swatch--light" style$="background-color:{{colors.status-blue1}}">1</span><span class="colorName">$status-blue1</span></div>
+    <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-blue2}}">2</span><span class="colorName">$status-blue2</span></div>
+    <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-blue3}}">3</span><span class="colorName">$status-blue3</span></div>
+    <div class="color u-mb++"><span class="swatch swatch--dark" style$="background-color:{{colors.status-blue4}}">4</span><span class="colorName">$status-blue4</span></div>
+    <div class="color hugeMargin"><span class="swatch swatch--light" style$="background-color:{{colors.status-green1}}">1</span><span class="colorName">$status-green1</span></div>
+    <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-green2}}">2</span><span class="colorName">$status-green2</span></div>
+    <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-green3}}">3</span><span class="colorName">$status-green3</span></div>
+    <div class="color u-mb++"><span class="swatch swatch--dark" style$="background-color:{{colors.status-green4}}">4</span><span class="colorName">$status-green4</span></div>
+  </div>  <!-- item -->
+</div> <!-- layout -->
 
-  <div class="u-mr++ u-mb++">
-    <div class="u-mb"><strong>Data Visualization (Bright)</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-1}}"></div> $d-dv-bright-1</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-2}}"></div> $d-dv-bright-2</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-3}}"></div> $d-dv-bright-3</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-4}}"></div> $d-dv-bright-4</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-5}}"></div> $d-dv-bright-5</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-6}}"></div> $d-dv-bright-6</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-7}}"></div> $d-dv-bright-7</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-8}}"></div> $d-dv-bright-8</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-9}}"></div> $d-dv-bright-9</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-bright-10}}"></div> $d-dv-bright-10</div>
-  </div>
+<div class="u-mb++">
+  <div class="epsilon title u-mb">Dataviz Color Sets</div>
+  <div class="layout layout--huge">
+    <div class="layout__item">
+      <div class="u-mb u-mt+ epsilon title"><strong>Regular Set</strong></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue5}}"></span><span class="colorName">$blue5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange5}}"></span><span class="colorName">$orange5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green5}}"></span><span class="colorName">$green5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink4}}"></span><span class="colorName">$pink4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.brown6}}"></span><span class="colorName">$brown6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple4}}"></span><span class="colorName">$purple4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow5}}"></span><span class="colorName">$yellow5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red6}}"></span><span class="colorName">$red6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray8}}"></span><span class="colorName">$neutral-gray8</span></div>
+    </div> <!-- item -->
+    <div class="layout__item">
+      <div class="u-mb u-mt+ epsilon title"><strong>Light Set</strong></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue3}}"></span><span class="colorName">$blue3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange3}}"></span><span class="colorName">$orange3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green3}}"></span><span class="colorName">$green3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink2}}"></span><span class="colorName">$pink2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.brown4}}"></span><span class="colorName">$brown4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple3}}"></span><span class="colorName">$purple3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow3}}"></span><span class="colorName">$yellow3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red3}}"></span><span class="colorName">$red3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray5}}"></span><span class="colorName">$neutral-gray5</span></div>
+    </div> <!-- item -->
+    <div class="layout__item">
+      <div class="u-mb u-mt+ epsilon title"><strong>Dark Set</strong></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue7}}"></span><span class="colorName">$blue7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange7}}"></span><span class="colorName">$orange7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green7}}"></span><span class="colorName">$green7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink6}}"></span><span class="colorName">$pink6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.brown7}}"></span><span class="colorName">$brown7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple7}}"></span><span class="colorName">$purple7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow7}}"></span><span class="colorName">$yellow7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red7}}"></span><span class="colorName">$red7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray10}}"></span><span class="colorName">$neutral-gray10</span></div>
+    </div> <!-- item -->
+  </div>  <!-- layout -->
+</div>
 
-  <div class="u-mr++ u-mb++">
-    <div class="u-mb"><strong>Data Visualization (Muted)</strong></div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-1}}"></div> $d-dv-muted-1</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-2}}"></div> $d-dv-muted-2</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-3}}"></div> $d-dv-muted-3</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-4}}"></div> $d-dv-muted-4</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-5}}"></div> $d-dv-muted-5</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-6}}"></div> $d-dv-muted-6</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-7}}"></div> $d-dv-muted-7</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-8}}"></div> $d-dv-muted-8</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-9}}"></div> $d-dv-muted-9</div>
-    <div class="color"><div class="chip" style$="background-color:{{dataVisColorsDark.d-dv-muted-10}}"></div> $d-dv-muted-10</div>
-  </div>
+<div class="hugeMargin u-mb++">
+  <div class="epsilon title">Data Visualization Colors</div>
+  <div class="layout layout--huge">
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title" style$="background-color:{{dataVisColors.orange6}}">Orange</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange1}}"></span><span class="colorName">$orange1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange2}}"></span><span class="colorName">$orange2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange3}}"></span><span class="colorName">$orange3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange4}}"></span><span class="colorName">$orange4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange5}}"></span><span class="colorName">$orange5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange6}}"></span><span class="colorName">$orange6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange7}}"></span><span class="colorName">$orange7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange8}}"></span><span class="colorName">$orange8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange9}}"></span><span class="colorName">$orange9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.orange10}}"></span><span class="colorName">$orange10</span></div>
+    </div> <!-- item -->
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title" style$="background-color:{{dataVisColors.yellow6}}">Yellow</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow1}}"></span><span class="colorName">$yellow1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow2}}"></span><span class="colorName">$yellow2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow3}}"></span><span class="colorName">$yellow3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow4}}"></span><span class="colorName">$yellow4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow5}}"></span><span class="colorName">$yellow5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow6}}"></span><span class="colorName">$yellow6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow7}}"></span><span class="colorName">$yellow7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow8}}"></span><span class="colorName">$yellow8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow9}}"></span><span class="colorName">$yellow9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow10}}"></span><span class="colorName">$yellow10</span></div>
+    </div> <!-- item -->
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title" style$="background-color:{{dataVisColors.yellow-green5}}">Yellow-Green</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow-green1}}"></span><span class="colorName">$yellow-green1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow-green2}}"></span><span class="colorName">$yellow-green2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow-green3}}"></span><span class="colorName">$yellow-green3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow-green4}}"></span><span class="colorName">$yellow-green4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow-green5}}"></span><span class="colorName">$yellow-green5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow-green6}}"></span><span class="colorName">$yellow-green6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow-green7}}"></span><span class="colorName">$yellow-green7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow-green8}}"></span><span class="colorName">$yellow-green8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow-green9}}"></span><span class="colorName">$yellow-green9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.yellow-green10}}"></span><span class="colorName">$yellow-green10</span></div>
+    </div> <!-- item -->
+  </div> <!-- layout -->
+  <div class="layout">
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb u-mb"><span class="swatch swatch--dark swatch--title u-mb" style$="background-color:{{dataVisColors.green6}}">Green</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green1}}"></span><span class="colorName">$green1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green2}}"></span><span class="colorName">$green2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green3}}"></span><span class="colorName">$green3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green4}}"></span><span class="colorName">$green4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green5}}"></span><span class="colorName">$green5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green6}}"></span><span class="colorName">$green6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green7}}"></span><span class="colorName">$green7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green8}}"></span><span class="colorName">$green8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green9}}"></span><span class="colorName">$green9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.green10}}"></span><span class="colorName">$green10</span></div>
+    </div> <!-- item -->
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title u-mb" style$="background-color:{{dataVisColors.teal5}}">Teal</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.teal1}}"></span><span class="colorName">$teal1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.teal2}}"></span><span class="colorName">$teal2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.teal3}}"></span><span class="colorName">$teal3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.teal4}}"></span><span class="colorName">$teal4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.teal5}}"></span><span class="colorName">$teal5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.teal6}}"></span><span class="colorName">$teal6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.teal7}}"></span><span class="colorName">$teal7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.teal8}}"></span><span class="colorName">$teal8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.teal9}}"></span><span class="colorName">$teal9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.teal10}}"></span><span class="colorName">$teal10</span></div>
+    </div> <!-- item -->
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title u-mb" style$="background-color:{{dataVisColors.aqua6}}">Aqua</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.aqua1}}"></span><span class="colorName">$aqua1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.aqua2}}"></span><span class="colorName">$aqua2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.aqua3}}"></span><span class="colorName">$aqua3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.aqua4}}"></span><span class="colorName">$aqua4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.aqua5}}"></span><span class="colorName">$aqua5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.aqua6}}"></span><span class="colorName">$aqua6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.aqua7}}"></span><span class="colorName">$aqua7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.aqua8}}"></span><span class="colorName">$aqua8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.aqua9}}"></span><span class="colorName">$aqua9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.aqua10}}"></span><span class="colorName">$aqua10</span></div>
+    </div> <!-- item -->
+  </div> <!-- layout -->
+  <div class="layout layout--huge">
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title u-mb" style$="background-color:{{dataVisColors.cyan6}}">Cyan</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.cyan1}}"></span><span class="colorName">$cyan1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.cyan2}}"></span><span class="colorName">$cyan2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.cyan3}}"></span><span class="colorName">$cyan3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.cyan4}}"></span><span class="colorName">$cyan4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.cyan5}}"></span><span class="colorName">$cyan5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.cyan6}}"></span><span class="colorName">$cyan6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.cyan7}}"></span><span class="colorName">$cyan7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.cyan8}}"></span><span class="colorName">$cyan8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.cyan9}}"></span><span class="colorName">$cyan9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.cyan10}}"></span><span class="colorName">$cyan10</span></div>
+    </div> <!-- item -->
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title u-mb" style$="background-color:{{dataVisColors.blue6}}">Blue</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue1}}"></span><span class="colorName">$blue1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue2}}"></span><span class="colorName">$blue2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue3}}"></span><span class="colorName">$blue3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue4}}"></span><span class="colorName">$blue4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue5}}"></span><span class="colorName">$blue5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue6}}"></span><span class="colorName">$blue6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue7}}"></span><span class="colorName">$blue7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue8}}"></span><span class="colorName">$blue8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue9}}"></span><span class="colorName">$blue9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.blue10}}"></span><span class="colorName">$blue10</span></div>
+    </div> <!-- item -->
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title u-mb" style$="background-color:{{dataVisColors.violet6}}">Violet</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.violet1}}"></span><span class="colorName">$violet1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.violet2}}"></span><span class="colorName">$violet2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.violet3}}"></span><span class="colorName">$violet3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.violet4}}"></span><span class="colorName">$violet4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.violet5}}"></span><span class="colorName">$violet5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.violet6}}"></span><span class="colorName">$violet6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.violet7}}"></span><span class="colorName">$violet7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.violet8}}"></span><span class="colorName">$violet8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.violet9}}"></span><span class="colorName">$violet9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.violet10}}"></span><span class="colorName">$violet10</span></div>
+    </div> <!-- item -->
+  </div> <!-- layout -->
+  <div class="layout layout--huge">
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title u-mb" style$="background-color:{{dataVisColors.purple7}}">Purple</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple1}}"></span><span class="colorName">$purple1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple2}}"></span><span class="colorName">$purple2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple3}}"></span><span class="colorName">$purple3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple4}}"></span><span class="colorName">$purple4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple5}}"></span><span class="colorName">$purple5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple6}}"></span><span class="colorName">$purple6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple7}}"></span><span class="colorName">$purple7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple8}}"></span><span class="colorName">$purple8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple9}}"></span><span class="colorName">$purple9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.purple10}}"></span><span class="colorName">$purple10</span></div>
+    </div> <!-- item -->
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title u-mb" style$="background-color:{{dataVisColors.pink5}}">Pink</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink1}}"></span><span class="colorName">$pink1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink2}}"></span><span class="colorName">$pink2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink3}}"></span><span class="colorName">$pink3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink4}}"></span><span class="colorName">$pink4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink5}}"></span><span class="colorName">$pink5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink6}}"></span><span class="colorName">$pink6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink7}}"></span><span class="colorName">$pink7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink8}}"></span><span class="colorName">$pink8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink9}}"></span><span class="colorName">$pink9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.pink10}}"></span><span class="colorName">$pink10</span></div>
+    </div> <!-- item -->
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title u-mb" style$="background-color:{{dataVisColors.red6}}">Red</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red1}}"></span><span class="colorName">$red1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red2}}"></span><span class="colorName">$red2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red3}}"></span><span class="colorName">$red3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red4}}"></span><span class="colorName">$red4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red5}}"></span><span class="colorName">$red5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red6}}"></span><span class="colorName">$red6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red7}}"></span><span class="colorName">$red7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red8}}"></span><span class="colorName">$red8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red9}}"></span><span class="colorName">$red9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.red10}}"></span><span class="colorName">$red10</span></div>
+    </div> <!-- item -->
+  </div> <!-- layout -->
+  <div class="layout layout--huge">
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title u-mb" style$="background-color:{{dataVisColors.brown6}}">Brown</span><span class="colorName"></span></div>
+      <div class="color "><span class="swatch" style$="background-color:{{dataVisColors.brown1}}"></span><span class="colorName">$brown1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.brown2}}"></span><span class="colorName">$brown2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.brown3}}"></span><span class="colorName">$brown3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.brown4}}"></span><span class="colorName">$brown4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.brown5}}"></span><span class="colorName">$brown5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.brown6}}"></span><span class="colorName">$brown6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.brown7}}"></span><span class="colorName">$brown7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.brown8}}"></span><span class="colorName">$brown8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.brown9}}"></span><span class="colorName">$brown9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.brown10}}"></span><span class="colorName">$brown10</span></div>
+    </div> <!-- item -->
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title u-mb" style$="background-color:{{dataVisColors.neutral-gray5}}">Neutral Gray</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray1}}"></span><span class="colorName">$neutral-gray1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray2}}"></span><span class="colorName">$neutral-gray2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray3}}"></span><span class="colorName">$neutral-gray3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray4}}"></span><span class="colorName">$neutral-gray4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray5}}"></span><span class="colorName">$neutral-gray5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray6}}"></span><span class="colorName">$neutral-gray6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray7}}"></span><span class="colorName">$neutral-gray7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray8}}"></span><span class="colorName">$neutral-gray8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray9}}"></span><span class="colorName">$neutral-gray9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.neutral-gray10}}"></span><span class="colorName">$neutral-gray10</span></div>
+    </div> <!-- item -->
+    <div class="u-mt++ u-mb++ layout__item">
+      <div class="color u-mb"><span class="swatch swatch--dark swatch--title u-mb" style$="background-color:{{dataVisColors.salmon6}}">Salmon</span><span class="colorName"></span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.salmon1}}"></span><span class="colorName">$salmon1</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.salmon2}}"></span><span class="colorName">$salmon2</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.salmon3}}"></span><span class="colorName">$salmon3</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.salmon4}}"></span><span class="colorName">$salmon4</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.salmon5}}"></span><span class="colorName">$salmon5</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.salmon6}}"></span><span class="colorName">$salmon6</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.salmon7}}"></span><span class="colorName">$salmon7</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.salmon8}}"></span><span class="colorName">$salmon8</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.salmon9}}"></span><span class="colorName">$salmon9</span></div>
+      <div class="color"><span class="swatch" style$="background-color:{{dataVisColors.salmon10}}"></span><span class="colorName">$salmon10</span></div>
+    </div> <!-- item -->
+  </div> <!-- layout -->
 
 </div>
 </section>
@@ -178,13 +416,13 @@ var dvPink = dataVisColors.properties.dataVisColorsDark.value.d-dv-basic-pink;
 <script>
   Polymer({
     is: 'local-element-demo-dark',
-    behaviors: [commonColorsDark],
+    behaviors: [commonColors],
 
     attached : function(){
-      var boundHandler = this._handleOptionsUpdated.bind(this); 
+      var boundHandler = this._handleOptionsUpdated.bind(this);
       this.addEventListener('px-sass-doc-options-updated', boundHandler)
     },
-    
+
     detached : function(){
       this.removeEventListener('px-sass-doc-options-updated', boundHandler);
     },
