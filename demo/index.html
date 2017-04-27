@@ -107,29 +107,6 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
   </div>  <!-- item -->
 
   <div class="u-mb++ layout__item">
-    <div class="epsilon title u-mb+"><strong>Light </strong>Actionable Palette</div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.primary-default}}"></span><span class="colorName">$primary-default</span></div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.primary-hover}}"></span><span class="colorName">$primary-hover</span></div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.primary-pressed}}"></span><span class="colorName">$primary-pressed</span></div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.primary-light}}"></span><span class="colorName">$primary-light</span></div>
-    <div class="u-mt++ epsilon title u-mb+"><strong>Light </strong>Selection Palette</div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.select-default}}"></span><span class="colorName">$select-default</span></div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.select-hover}}"></span><span class="colorName">$select-hover</span></div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.select-pressed}}"></span><span class="colorName">$select-pressed</span></div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.select-light}}"></span><span class="colorName">$select-light</span></div>
-    <div class="hugeMargin epsilon title u-mb+"><strong>Dark </strong>Actionable Palette</div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.d-primary-default}}"></span><span class="colorName">$d-primary-default</span></div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.d-primary-hover}}"></span><span class="colorName">$d-primary-hover</span></div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.d-primary-pressed}}"></span><span class="colorName">$d-primary-pressed</span></div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.d-primary-light}}"></span><span class="colorName">$d-primary-light</span></div>
-    <div class="u-mt++ epsilon title u-mb+"><strong>Dark </strong>Selection Palette</div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.d-select-default}}"></span><span class="colorName">$d-select-default</span></div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.d-select-hover}}"></span><span class="colorName">$d-select-hover</span></div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.d-select-pressed}}"></span><span class="colorName">$d-select-pressed</span></div>
-    <div class="color"><span class="swatch" style$="background-color:{{colors.d-select-light}}"></span><span class="colorName">$d-select-light</span></div>
-  </div>  <!-- item -->
-
-  <div class="u-mb++ layout__item">
     <div class="epsilon title u-mb+">Alerts and Status</div>
     <div class="color"><span class="swatch swatch--light" style$="background-color:{{colors.status-red1}}">1</span><span class="colorName">$status-red1</span></div>
     <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-red2}}">2</span><span class="colorName">$status-red2</span></div>
@@ -151,6 +128,19 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
     <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-green2}}">2</span><span class="colorName">$status-green2</span></div>
     <div class="color"><span class="swatch swatch--dark" style$="background-color:{{colors.status-green3}}">3</span><span class="colorName">$status-green3</span></div>
     <div class="color u-mb++"><span class="swatch swatch--dark" style$="background-color:{{colors.status-green4}}">4</span><span class="colorName">$status-green4</span></div>
+  </div>  <!-- item -->
+
+  <div class="u-mb++ layout__item">
+    <div class="epsilon title u-mb+">Actionable Palette</div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.primary-default}}"></span><span class="colorName">$primary-default</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.primary-hover}}"></span><span class="colorName">$primary-hover</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.primary-pressed}}"></span><span class="colorName">$primary-pressed</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.primary-light}}"></span><span class="colorName">$primary-light</span></div>
+    <div class="u-mt++ epsilon title u-mb+">Selection Palette</div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.select-default}}"></span><span class="colorName">$select-default</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.select-hover}}"></span><span class="colorName">$select-hover</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.select-pressed}}"></span><span class="colorName">$select-pressed</span></div>
+    <div class="color"><span class="swatch" style$="background-color:{{colors.select-light}}"></span><span class="colorName">$select-light</span></div>
   </div>  <!-- item -->
 </div> <!-- layout -->
 
@@ -419,10 +409,10 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
     behaviors: [commonColors],
 
     attached : function(){
-      var boundHandler = this._handleOptionsUpdated.bind(this); 
+      var boundHandler = this._handleOptionsUpdated.bind(this);
       this.addEventListener('px-sass-doc-options-updated', boundHandler)
     },
-    
+
     detached : function(){
       this.removeEventListener('px-sass-doc-options-updated', boundHandler);
     },
