@@ -29,10 +29,10 @@
     "OSS_Notice.pdf"
   ],
   "devDependencies": {
-    "px-starter-kit-design": "^0.7.0",
-    "px-sass-doc": "^0.4.3",
-    "px-dark-theme": "^1.0.1",
-    "px-dark-demo-theme": "^1.0.3",
-    "px-layout-design": "^0.4.6"
+    "px-starter-kit-design": "^1.0.0",
+    "px-sass-doc": "^1.0.0",
+    "px-dark-theme": "^2.0.0",
+    "px-dark-demo-theme": "^2.0.0",
+    "px-layout-design": "^1.0.0"
   }
 }
