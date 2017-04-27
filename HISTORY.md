@@ -1,8 +1,12 @@
-v1.0.1
+v1.0.1-prerelease-1
+==================
+* removed $d- colors per design request
+
+v1.0.1-prerelease
 ==================
 * update dark theme demo
 
-v1.0.0
+v1.0.0-prerelease
 ==================
 * Release the redesigned Predix UI color palette
 

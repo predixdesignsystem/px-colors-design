@@ -14,6 +14,7 @@
   "homepage": "https://github.com/PredixDev/px-colors-design.git",
   "private": false,
   "ignore": [
+    "*.enc",
     "**/.*",
     "node_modules",
     "bower_components",
