@@ -1,3 +1,11 @@
+v1.0.1-prerelease-3
+==================
+* add numbers to data vis color swatches and update colors of all numbers for accessibility
+
+v1.0.1-prerelease-2
+==================
+* update class names and remove dark theme colors
+
 v1.0.1-prerelease-1
 ==================
 * removed $d- colors per design request
