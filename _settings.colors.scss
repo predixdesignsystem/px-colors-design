@@ -57,18 +57,25 @@ $white                          : rgb(255,255,255);
 /**
  * Actionable Palette
  */
-$primary-default                : rgb(62,135,232);
-$primary-hover                  : rgb(53,115,197);
-$primary-pressed                : rgb(43,94,162);
+$primary-default                : rgb(0,122,204);
+$primary-hover                  : rgb(0,92,153);
+$primary-pressed                : rgb(0,61,102);
 $primary-light                  : rgb(238,251,255);
 
 /**
  * Selection Palette
  */
-$select-default                 : rgb(10,158,193);
-$select-hover                   : rgb(9,134,164);
-$select-pressed                 : rgb(8,110,135);
+$select-default                 : rgb(9,129,156);
+$select-hover                   : rgb(6,87,105);
+$select-pressed                 : rgb(3,44,54);
 $select-light                   : rgb(230,251,255);
+
+/**
+ * Dark Actionable Palette
+ */
+$d-actionable-default           : rgb(69,172,229);
+$d-actionable-hover             : rgb(45,115,153);
+$d-actionable-pressed           : rgb(30,77,102);
 
 /**
  * Alerts and Status

@@ -1,25 +1,11 @@
-v1.0.1-prerelease-4
+v1.0.0
 ==================
+* update colors
 * update primary-default color
-
-v1.0.1-prerelease-3
-==================
 * add numbers to data vis color swatches and update colors of all numbers for accessibility
-
-v1.0.1-prerelease-2
-==================
 * update class names and remove dark theme colors
-
-v1.0.1-prerelease-1
-==================
 * removed $d- colors per design request
-
-v1.0.1-prerelease
-==================
 * update dark theme demo
-
-v1.0.0-prerelease
-==================
 * Release the redesigned Predix UI color palette
 
 v0.3.9
