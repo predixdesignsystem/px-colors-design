@@ -1,3 +1,7 @@
+v1.0.1-prerelease-4
+==================
+* update primary-default color
+
 v1.0.1-prerelease-3
 ==================
 * add numbers to data vis color swatches and update colors of all numbers for accessibility
