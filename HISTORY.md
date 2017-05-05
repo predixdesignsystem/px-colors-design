@@ -1,5 +1,6 @@
 v1.0.0
 ==================
+* remove numbers from color swatches and remove color title swatches for accessibility
 * update colors
 * update primary-default color
 * add numbers to data vis color swatches and update colors of all numbers for accessibility
