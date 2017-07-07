@@ -1,6 +1,6 @@
-# Colors
+# px-colors-design
 
-The Colors module assigns Sass variables to the PX color palette.
+The px-colors-design module assigns Sass variables to the Px color palette.
 
 ## Installation
 
