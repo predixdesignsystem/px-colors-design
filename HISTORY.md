@@ -8,6 +8,7 @@ v1.0.0
 * removed $d- colors per design request
 * update dark theme demo
 * Release the redesigned Predix UI color palette
+* Removed legacy variables for back compatibility
 
 v0.3.9
 ==================

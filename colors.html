@@ -79,9 +79,6 @@ PxColorsBehavior.baseColors = {
   }
 };
 
-// Maintain backward compatability by also exporting mixin as `baseColors`
-var baseColors = PxColorsBehavior.baseColors;
-
 /*
   Name:
   PxColorsBehavior.dataVisColors
@@ -94,211 +91,21 @@ var baseColors = PxColorsBehavior.baseColors;
 PxColorsBehavior.dataVisColors = {
   properties: {
     /**
-     * * A key/value map of Predix UI data vis specific color variable names to
-     * their RGB values.
+     * Defines an colors in order that will be used for series.
      *
-     * @property dataVisColors
-     * @type {Object}
-     */
-    dataVisColors: {
-      type: Object,
-      value: {
-        "orange1"        : "rgb(244,210,173)",
-        "orange2"        : "rgb(242,200,154)",
-        "orange3"        : "rgb(240,191,136)",
-        "orange4"        : "rgb(236,175,104)",
-        "orange5"        : "rgb(233,162,75)",
-        "orange6"        : "rgb(226,141,23)",
-        "orange7"        : "rgb(196,122,20)",
-        "orange8"        : "rgb(149,92,17)",
-        "orange9"        : "rgb(124,77,16)",
-        "orange10"       : "rgb(97,60,13)",
-        "yellow1"        : "rgb(239,232,165)",
-        "yellow2"        : "rgb(235,227,147)",
-        "yellow3"        : "rgb(232,224,130)",
-        "yellow4"        : "rgb(225,215,94)",
-        "yellow5"        : "rgb(219,209,57)",
-        "yellow6"        : "rgb(211,200,0)",
-        "yellow7"        : "rgb(180,171,0)",
-        "yellow8"        : "rgb(138,131,0)",
-        "yellow9"        : "rgb(115,109,0)",
-        "yellow10"       : "rgb(89,85,2)",
-        "yellow-green1"  : "rgb(187,226,151)",
-        "yellow-green2"  : "rgb(174,220,128)",
-        "yellow-green3"  : "rgb(164,215,107)",
-        "yellow-green4"  : "rgb(146,206,64)",
-        "yellow-green5"  : "rgb(134,198,0)",
-        "yellow-green6"  : "rgb(123,188,0)",
-        "yellow-green7"  : "rgb(103,159,0)",
-        "yellow-green8"  : "rgb(79,123,0)",
-        "yellow-green9"  : "rgb(64,102,0)",
-        "yellow-green10" : "rgb(50,80,0)",
-        "green1"         : "rgb(189,212,181)",
-        "green2"         : "rgb(176,204,166)",
-        "green3"         : "rgb(164,196,151)",
-        "green4"         : "rgb(142,180,124)",
-        "green5"         : "rgb(123,166,98)",
-        "green6"         : "rgb(101,149,64)",
-        "green7"         : "rgb(85,126,54)",
-        "green8"         : "rgb(66,98,42)",
-        "green9"         : "rgb(53,80,35)",
-        "green10"        : "rgb(42,64,27)",
-        "teal1"          : "rgb(201,227,223)",
-        "teal2"          : "rgb(174,213,207)",
-        "teal3"          : "rgb(147,200,191)",
-        "teal4"          : "rgb(120,186,175)",
-        "teal5"          : "rgb(93,172,159)",
-        "teal6"          : "rgb(77,151,139)",
-        "teal7"          : "rgb(62,121,111)",
-        "teal8"          : "rgb(49,94,87)",
-        "teal9"          : "rgb(35,67,62)",
-        "teal10"         : "rgb(21,40,37)",
-        "aqua1"          : "rgb(182,206,221)",
-        "aqua2"          : "rgb(168,196,214)",
-        "aqua3"          : "rgb(153,186,208)",
-        "aqua4"          : "rgb(125,167,195)",
-        "aqua5"          : "rgb(103,151,184)",
-        "aqua6"          : "rgb(72,130,168)",
-        "aqua7"          : "rgb(62,112,145)",
-        "aqua8"          : "rgb(46,84,109)",
-        "aqua9"          : "rgb(38,69,90)",
-        "aqua10"         : "rgb(30,55,71)",
-        "cyan1"          : "rgb(181,229,253)",
-        "cyan2"          : "rgb(166,223,252)",
-        "cyan3"          : "rgb(153,218,251)",
-        "cyan4"          : "rgb(130,210,251)",
-        "cyan5"          : "rgb(111,201,250)",
-        "cyan6"          : "rgb(90,191,248)",
-        "cyan7"          : "rgb(77,164,213)",
-        "cyan8"          : "rgb(59,126,164)",
-        "cyan9"          : "rgb(47,103,135)",
-        "cyan10"         : "rgb(36,80,105)",
-        "blue1"          : "rgb(197,205,255)",
-        "blue2"          : "rgb(185,195,255)",
-        "blue3"          : "rgb(173,185,255)",
-        "blue4"          : "rgb(149,167,255)",
-        "blue5"          : "rgb(128,152,255)",
-        "blue6"          : "rgb(97,132,255)",
-        "blue7"          : "rgb(82,111,218)",
-        "blue8"          : "rgb(64,86,170)",
-        "blue9"          : "rgb(54,72,142)",
-        "blue10"         : "rgb(43,58,114)",
-        "violet1"        : "rgb(217,198,249)",
-        "violet2"        : "rgb(210,187,249)",
-        "violet3"        : "rgb(204,177,247)",
-        "violet4"        : "rgb(191,158,244)",
-        "violet5"        : "rgb(180,140,242)",
-        "violet6"        : "rgb(166,119,239)",
-        "violet7"        : "rgb(140,101,203)",
-        "violet8"        : "rgb(107,76,155)",
-        "violet9"        : "rgb(89,64,128)",
-        "violet10"       : "rgb(70,50,102)",
-        "purple1"        : "rgb(236,191,229)",
-        "purple2"        : "rgb(233,180,224)",
-        "purple3"        : "rgb(231,168,219)",
-        "purple4"        : "rgb(227,147,210)",
-        "purple5"        : "rgb(224,129,201)",
-        "purple6"        : "rgb(219,106,188)",
-        "purple7"        : "rgb(187,90,159)",
-        "purple8"        : "rgb(144,69,123)",
-        "purple9"        : "rgb(119,57,102)",
-        "purple10"       : "rgb(96,46,82)",
-        "pink1"          : "rgb(232,165,200)",
-        "pink2"          : "rgb(229,148,189)",
-        "pink3"          : "rgb(226,132,178)",
-        "pink4"          : "rgb(223,102,155)",
-        "pink5"          : "rgb(222,82,136)",
-        "pink6"          : "rgb(222,67,119)",
-        "pink7"          : "rgb(188,56,94)",
-        "pink8"          : "rgb(145,41,72)",
-        "pink9"          : "rgb(120,33,60)",
-        "pink10"         : "rgb(95,24,48)",
-        "red1"           : "rgb(237,182,189)",
-        "red2"           : "rgb(235,169,176)",
-        "red3"           : "rgb(233,155,163)",
-        "red4"           : "rgb(229,129,137)",
-        "red5"           : "rgb(227,110,116)",
-        "red6"           : "rgb(224,84,85)",
-        "red7"           : "rgb(190,71,72)",
-        "red8"           : "rgb(144,53,55)",
-        "red9"           : "rgb(120,44,46)",
-        "red10"          : "rgb(97,35,37)",
-        "brown1"         : "rgb(225,211,176)",
-        "brown2"         : "rgb(220,202,160)",
-        "brown3"         : "rgb(214,194,143)",
-        "brown4"         : "rgb(202,178,114)",
-        "brown5"         : "rgb(192,164,85)",
-        "brown6"         : "rgb(178,145,46)",
-        "brown7"         : "rgb(151,123,39)",
-        "brown8"         : "rgb(116,94,31)",
-        "brown9"         : "rgb(96,78,26)",
-        "brown10"        : "rgb(76,62,20)",
-        "neutral-gray1"  : "rgb(224,224,224)",
-        "neutral-gray2"  : "rgb(204,204,204)",
-        "neutral-gray3"  : "rgb(184,184,184)",
-        "neutral-gray4"  : "rgb(163,163,163)",
-        "neutral-gray5"  : "rgb(143,143,143)",
-        "neutral-gray6"  : "rgb(122,122,122)",
-        "neutral-gray7"  : "rgb(102,102,102)",
-        "neutral-gray8"  : "rgb(77,77,77)",
-        "neutral-gray9"  : "rgb(61,61,61)",
-        "neutral-gray10" : "rgb(41,41,41)",
-        "salmon1"        : "rgb(247,219,201)",
-        "salmon2"        : "rgb(246,212,191)",
-        "salmon3"        : "rgb(244,204,180)",
-        "salmon4"        : "rgb(242,191,159)",
-        "salmon5"        : "rgb(240,179,141)",
-        "salmon6"        : "rgb(255,160,118)",
-        "salmon7"        : "rgb(203,140,99)",
-        "salmon8"        : "rgb(157,108,78)",
-        "salmon9"        : "rgb(129,89,64)",
-        "salmon10"       : "rgb(101,70,50)"
-      }
-    },
-
-    /**
-     * Defines an order that colors should be used in for multiple series.
-     *
-     * @property seriesColorOrder
      * @type {Array}
      */
-    seriesColorOrder: {
+    seriesColorList: {
       type: Array,
       value: [
-        "blue5",
-        "orange5",
-        "green5",
-        "pink5",
-        "brown6",
-        "purple4",
-        "yellow5",
-        "red6",
-        "neutral-gray8",
-        "blue3",
-        "orange3",
-        "green3",
-        "pink1",
-        "brown4",
-        "purple3",
-        "yellow3",
-        "red3",
-        "neutral-gray5",
-        "cyan7",
-        "orange7",
-        "green6",
-        "pink5",
-        "brown7",
-        "purple7",
-        "yellow6",
-        "red6",
-        "neutral-gray7"
+        'rgb(0,0,0)',
+        'rgb(75,75,75)',
+        'rgb(125,125,125)',
+        'rgb(200,200,200)'
       ]
     }
   }
 };
-
-// Maintain backward compatability by also exporting mixin as `dataVisColors`
-var dataVisColors = PxColorsBehavior.dataVisColors;
 
 /*
   Name:
@@ -313,8 +120,6 @@ var dataVisColors = PxColorsBehavior.dataVisColors;
 */
 PxColorsBehavior.commonColors = [PxColorsBehavior.dataVisColors, PxColorsBehavior.baseColors];
 
-// Maintain backward compatability by also exporting mixin as `commonColors`
-var commonColors = PxColorsBehavior.commonColors;
 
 /*
   Name:
@@ -360,9 +165,10 @@ PxColorsBehavior.dataVisColorTheming = [{
         this._applyStyleVariables();
       }
       // Otherwise, apply our default colors
-      else {
-        this._applyDefaultStyleVariables();
-      };
+      // REDESIGN: Might need to change this so it checks if default was overwritten and use it instead of theme
+      // else {
+      //   this._applyDefaultStyleVariables();
+      // };
 
       this.dispatchEvent(new CustomEvent('px-data-vis-colors-applied'));
     },
@@ -379,20 +185,16 @@ PxColorsBehavior.dataVisColorTheming = [{
      */
     _applyStyleVariables: function() {
       var variableBase = '--px-vis-series-color-';
-      var newColors = {};
-      var seriesColorOrder = [];
+      var newColors = [];
       var index = 0;
       var stop = false;
       var currentColor;
-      var dataVisColorsKeys = Object.keys(this.dataVisColors);
-
-      //copy colors we already have
-      for (i = 0, length = dataVisColorsKeys.length; i < length; i++) {
-        newColors[dataVisColorsKeys[i]] = this.dataVisColors[dataVisColorsKeys[i]];
-      };
 
       //check if the developer passed in their own seriesColorOrder
       var devSet = this._checkIfDevSetSeriesColorOrder();
+      if(devSet) {
+        return;
+      }
 
       // Loop over style variables until a gap is found
       while (!stop) {
@@ -407,25 +209,14 @@ PxColorsBehavior.dataVisColorTheming = [{
           // Ensure the color is converted to RGB
           currentColor = currentColor[0] === '#' ? this._colorHexToRgb(currentColor) : currentColor;
 
-          // Store values to set later
-          newColors['pxVisSeriesColor' + index] = currentColor;
-
-          if(!devSet) {
-            seriesColorOrder.push('pxVisSeriesColor' + index);
-          }
+          newColors.push(currentColor);
         };
 
         // Iterate index so we continue to get style variables
-        index++;
+        index += 1;
       };
 
-      // Set properties on self to new values
-      // @TODO Use batch update in Polymer 2.0
-      this.set('dataVisColors', newColors);
-
-      if(!devSet) {
-        this.set('seriesColorOrder', seriesColorOrder);
-      }
+      this.set('seriesColorList', newColors);
     },
 
     /**
@@ -436,35 +227,35 @@ PxColorsBehavior.dataVisColorTheming = [{
      * @private
      * @method _applyDefaultStyleVariables
      */
-    _applyDefaultStyleVariables: function() {
-      var newColors = {};
-      var newOrder = [];
-      var dataVisColorsKeys = Object.keys(this.dataVisColors);
-      var i;
-      var length;
+    // _applyDefaultStyleVariables: function() {
+    //   var newColors = {};
+    //   var newOrder = [];
+    //   var dataVisColorsKeys = Object.keys(this.dataVisColors);
+    //   var i;
+    //   var length;
 
-      //check if the developer passed in their own seriesColorOrder
-      var devSet = this._checkIfDevSetSeriesColorOrder();
+    //   //check if the developer passed in their own seriesColorOrder
+    //   var devSet = this._checkIfDevSetSeriesColorOrder();
 
-      for (i = 0, length = dataVisColorsKeys.length; i < length; i++) {
-        newColors[dataVisColorsKeys[i]] = this.dataVisColors[dataVisColorsKeys[i]];
-        newColors['pxVisSeriesColor' + i] = this.dataVisColors[dataVisColorsKeys[i]];
-      };
+    //   for (i = 0, length = dataVisColorsKeys.length; i < length; i++) {
+    //     newColors[dataVisColorsKeys[i]] = this.dataVisColors[dataVisColorsKeys[i]];
+    //     newColors['pxVisSeriesColor' + i] = this.dataVisColors[dataVisColorsKeys[i]];
+    //   };
 
-      if(!devSet) {
-        var updatedDataVisColorsKeys = Object.keys(newColors);
-        for (i = 0, length = this.seriesColorOrder.length; i < length; i++) {
-          var visIndex = dataVisColorsKeys.indexOf(this.seriesColorOrder[i]);
-          newOrder[i] = 'pxVisSeriesColor' + visIndex;
-        };
+    //   if(!devSet) {
+    //     var updatedDataVisColorsKeys = Object.keys(newColors);
+    //     for (i = 0, length = this.seriesColorOrder.length; i < length; i++) {
+    //       var visIndex = dataVisColorsKeys.indexOf(this.seriesColorOrder[i]);
+    //       newOrder[i] = 'pxVisSeriesColor' + visIndex;
+    //     };
 
-        // Set properties on self to new values
-        // @TODO Use batch update in Polymer 2.0
-        this.set('seriesColorOrder', newOrder);
-      }
+    //     // Set properties on self to new values
+    //     // @TODO Use batch update in Polymer 2.0
+    //     this.set('seriesColorOrder', newOrder);
+    //   }
 
-      this.set('dataVisColors', newColors);
-    },
+    //   this.set('dataVisColors', newColors);
+    // },
 
     /**
      * Converts a hex-format color to RGB.
@@ -494,14 +285,14 @@ PxColorsBehavior.dataVisColorTheming = [{
      * @return {Boolean} - true if dev set seriesColorOrder
      */
     _checkIfDevSetSeriesColorOrder: function() {
-      var defaultOrder = dataVisColors.properties.seriesColorOrder.value;
+      var defaultOrder = PxColorsBehavior.dataVisColors.properties.seriesColorList.value;
 
-      if(defaultOrder.length !== this.seriesColorOrder.length) {
+      if(defaultOrder.length !== this.seriesColorList.length) {
         return true;
       }
 
       for(var i = 0; i < defaultOrder.length; i++) {
-        if(defaultOrder[i] !== this.seriesColorOrder[i]) {
+        if(defaultOrder[i] !== this.seriesColorList[i]) {
           return true;
         }
       }
@@ -509,5 +300,5 @@ PxColorsBehavior.dataVisColorTheming = [{
       return false;
     }
 
-}, PxColorsBehavior.commonColors];
+}, PxColorsBehavior.dataVisColors];
 </script>
