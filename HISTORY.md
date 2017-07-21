@@ -1,3 +1,7 @@
+v1.0.2
+==================
+* fixing up the demo and docs
+
 v1.0.1
 ==================
 * remove numbers from color swatches and remove color title swatches for accessibility
@@ -7,7 +11,7 @@ v1.0.1
 * update class names and remove dark theme colors
 * removed $d- colors per design request
 * update dark theme demo
-* Release the redesigned Predix UI color palette
+* release the redesigned Predix UI color palette
 * Removed colors.html
 
 v0.3.9
