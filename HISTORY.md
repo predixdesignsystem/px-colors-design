@@ -1,4 +1,4 @@
-v1.0.0
+v1.0.1
 ==================
 * remove numbers from color swatches and remove color title swatches for accessibility
 * update colors
