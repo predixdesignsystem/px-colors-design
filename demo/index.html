@@ -4,7 +4,6 @@
   <!-- Common demo imports -->
   <link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
   <link rel="import" href="../css/px-colors-design-demo-styles.html" />
-  <link rel="import" href="../colors.html" />
 
 <!-- Demo DOM module -->
 <dom-module id="local-element-demo">
@@ -42,38 +41,6 @@
 background-color: $black;
 ```
 
-<p class="u-mt">
-  <strong>Polymer Behavior</strong><br/>
-  This component can also be installed as a Polymer behavior. After you install it with Bower, reference it in your project:
-</p>
-
-```
-<!-- Import behavior in the document head: -->
-<!--<link rel="import" href="../px-colors-design/colors.html" /> -->
-
-
-<!-- Add the variable as a behavior: -->
-<!-- <script>
-Polymer({
-  is: 'px-my-component',
-  behaviors: [commonColors],
-  //...
-});
-</script> -->
-```
-<p class="u-mt--">
-  Note: The code above is commented out so as not to be executed on this page. Be sure to uncomment the code (but not the comments) when you import the Polymer behavior in your own project.
-</p>
-
-<p class="u-mt">
-  <strong>JavaScript Variable</strong><br/>
-  Alternatively, if you are not using Polymer in your project, you can access the JavaScript variables directly. After install/import:
-</p>
-
-```
-var primaryBlue = baseColors.properties.colors.value.primary-blue;
-var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
-```
 </section>
 
 <section data-slot="intro">
@@ -84,71 +51,71 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
   <div class="u-mb++ layout__item">
     <div class="epsilon demo-text--gray caps u-mb+">Neutral Palette</div>
     <div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.white}}; border: 1px solid {{colors.gray2}}"></span><span class="demo-color-swatch-label">$white</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray1}}"></span><span class="demo-color-swatch-label">$gray1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray2}}"></span><span class="demo-color-swatch-label">$gray2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray3}}"></span><span class="demo-color-swatch-label">$gray3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray4}}"></span><span class="demo-color-swatch-label">$gray4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray5}}"></span><span class="demo-color-swatch-label">$gray5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray6}}"></span><span class="demo-color-swatch-label">$gray6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray7}}"></span><span class="demo-color-swatch-label">$gray7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray8}}"></span><span class="demo-color-swatch-label">$gray8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray9}}"></span><span class="demo-color-swatch-label">$gray9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray10}}"></span><span class="demo-color-swatch-label">$gray10</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray11}}"></span><span class="demo-color-swatch-label">$gray11</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray12}}"></span><span class="demo-color-swatch-label">$gray12</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray13}}"></span><span class="demo-color-swatch-label">$gray13</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray14}}"></span><span class="demo-color-swatch-label">$gray14</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray15}}"></span><span class="demo-color-swatch-label">$gray15</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray16}}"></span><span class="demo-color-swatch-label">$gray16</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray17}}"></span><span class="demo-color-swatch-label">$gray17</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray18}}"></span><span class="demo-color-swatch-label">$gray18</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray19}}"></span><span class="demo-color-swatch-label">$gray19</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.gray20}}"></span><span class="demo-color-swatch-label">$gray20</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.black}}"></span> <span class="demo-color-swatch-label">$black</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch white"></span><span class="demo-color-swatch-label">$white</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray1"></span><span class="demo-color-swatch-label">$gray1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray2"></span><span class="demo-color-swatch-label">$gray2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray3"></span><span class="demo-color-swatch-label">$gray3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray4"></span><span class="demo-color-swatch-label">$gray4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray5"></span><span class="demo-color-swatch-label">$gray5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray6"></span><span class="demo-color-swatch-label">$gray6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray7"></span><span class="demo-color-swatch-label">$gray7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray8"></span><span class="demo-color-swatch-label">$gray8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray9"></span><span class="demo-color-swatch-label">$gray9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray10"></span><span class="demo-color-swatch-label">$gray10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray11"></span><span class="demo-color-swatch-label">$gray11</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray12"></span><span class="demo-color-swatch-label">$gray12</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray13"></span><span class="demo-color-swatch-label">$gray13</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray14"></span><span class="demo-color-swatch-label">$gray14</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray15"></span><span class="demo-color-swatch-label">$gray15</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray16"></span><span class="demo-color-swatch-label">$gray16</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray17"></span><span class="demo-color-swatch-label">$gray17</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray18"></span><span class="demo-color-swatch-label">$gray18</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray19"></span><span class="demo-color-swatch-label">$gray19</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch gray20"></span><span class="demo-color-swatch-label">$gray20</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch black"></span> <span class="demo-color-swatch-label">$black</span></div>
     </div>
   </div>  <!-- item -->
 
   <div class="u-mb++ layout__item">
 
     <div class="epsilon demo-text--gray caps u-mb+">Alerts and Status</div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.status-red1}}"></span><span class="demo-color-swatch-label">$status-red1</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.status-red2}}"></span><span class="demo-color-swatch-label">$status-red2</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.status-red3}}"></span><span class="demo-color-swatch-label">$status-red3</span></div>
-    <div class="demo-color-swatch--container u-mb++"><span class="demo-color-swatch" style$="background-color:{{colors.status-red4}}"></span><span class="demo-color-swatch-label">$status-red4</span></div>
-    <div class="demo-color-swatch--container demo-margin-top-huge"><span class="demo-color-swatch" style$="background-color:{{colors.status-orange1}}"></span><span class="demo-color-swatch-label">$status-orange1</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.status-orange2}}"></span><span class="demo-color-swatch-label">$status-orange2</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.status-orange3}}"></span><span class="demo-color-swatch-label">$status-orange3</span></div>
-    <div class="demo-color-swatch--container u-mb++"><span class="demo-color-swatch" style$="background-color:{{colors.status-orange4}}"></span><span class="demo-color-swatch-label">$status-orange4</span></div>
-    <div class="demo-color-swatch--container demo-margin-top-huge"><span class="demo-color-swatch" style$="background-color:{{colors.status-yellow1}}"></span><span class="demo-color-swatch-label">$status-yellow1</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.status-yellow2}}"></span><span class="demo-color-swatch-label">$status-yellow2</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.status-yellow3}}"></span><span class="demo-color-swatch-label">$status-yellow3</span></div>
-    <div class="demo-color-swatch--container u-mb++"><span class="demo-color-swatch" style$="background-color:{{colors.status-yellow4}}"></span><span class="demo-color-swatch-label">$status-yellow4</span></div>
-    <div class="demo-color-swatch--container demo-margin-top-huge"><span class="demo-color-swatch" style$="background-color:{{colors.status-blue1}}"></span><span class="demo-color-swatch-label">$status-blue1</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.status-blue2}}"></span><span class="demo-color-swatch-label">$status-blue2</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.status-blue3}}"></span><span class="demo-color-swatch-label">$status-blue3</span></div>
-    <div class="demo-color-swatch--container u-mb++"><span class="demo-color-swatch" style$="background-color:{{colors.status-blue4}}"></span><span class="demo-color-swatch-label">$status-blue4</span></div>
-    <div class="demo-color-swatch--container demo-margin-top-huge"><span class="demo-color-swatch" style$="background-color:{{colors.status-green1}}"></span><span class="demo-color-swatch-label">$status-green1</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.status-green2}}"></span><span class="demo-color-swatch-label">$status-green2</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.status-green3}}"></span><span class="demo-color-swatch-label">$status-green3</span></div>
-    <div class="demo-color-swatch--container u-mb++"><span class="demo-color-swatch" style$="background-color:{{colors.status-green4}}"></span><span class="demo-color-swatch-label">$status-green4</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch status-red1"></span><span class="demo-color-swatch-label">$status-red1</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch status-red2"></span><span class="demo-color-swatch-label">$status-red2</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch status-red3"></span><span class="demo-color-swatch-label">$status-red3</span></div>
+    <div class="demo-color-swatch--container u-mb++"><span class="demo-color-swatch status-red4"></span><span class="demo-color-swatch-label">$status-red4</span></div>
+    <div class="demo-color-swatch--container demo-margin-top-huge"><span class="demo-color-swatch status-orange1"></span><span class="demo-color-swatch-label">$status-orange1</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch status-orange2"></span><span class="demo-color-swatch-label">$status-orange2</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch status-orange3"></span><span class="demo-color-swatch-label">$status-orange3</span></div>
+    <div class="demo-color-swatch--container u-mb++"><span class="demo-color-swatch status-orange4"></span><span class="demo-color-swatch-label">$status-orange4</span></div>
+    <div class="demo-color-swatch--container demo-margin-top-huge"><span class="demo-color-swatch status-yellow1"></span><span class="demo-color-swatch-label">$status-yellow1</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch status-yellow2"></span><span class="demo-color-swatch-label">$status-yellow2</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch status-yellow3"></span><span class="demo-color-swatch-label">$status-yellow3</span></div>
+    <div class="demo-color-swatch--container u-mb++"><span class="demo-color-swatch status-yellow4"></span><span class="demo-color-swatch-label">$status-yellow4</span></div>
+    <div class="demo-color-swatch--container demo-margin-top-huge"><span class="demo-color-swatch status-blue1"></span><span class="demo-color-swatch-label">$status-blue1</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch status-blue2"></span><span class="demo-color-swatch-label">$status-blue2</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch status-blue3"></span><span class="demo-color-swatch-label">$status-blue3</span></div>
+    <div class="demo-color-swatch--container u-mb++"><span class="demo-color-swatch status-blue4"></span><span class="demo-color-swatch-label">$status-blue4</span></div>
+    <div class="demo-color-swatch--container demo-margin-top-huge"><span class="demo-color-swatch status-green1"></span><span class="demo-color-swatch-label">$status-green1</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch status-green2"></span><span class="demo-color-swatch-label">$status-green2</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch status-green3"></span><span class="demo-color-swatch-label">$status-green3</span></div>
+    <div class="demo-color-swatch--container u-mb++"><span class="demo-color-swatch status-green4"></span><span class="demo-color-swatch-label">$status-green4</span></div>
   </div>  <!-- item -->
 
   <div class="u-mb++ layout__item">
     <div class="epsilon demo-text--gray caps u-mb+">Actionable Palette</div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.primary-default}}"></span><span class="demo-color-swatch-label">$primary-default</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.primary-hover}}"></span><span class="demo-color-swatch-label">$primary-hover</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.primary-pressed}}"></span><span class="demo-color-swatch-label">$primary-pressed</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.primary-light}}"></span><span class="demo-color-swatch-label">$primary-light</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch primary-default"></span><span class="demo-color-swatch-label">$primary-default</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch primary-hover"></span><span class="demo-color-swatch-label">$primary-hover</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch primary-pressed"></span><span class="demo-color-swatch-label">$primary-pressed</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch primary-light"></span><span class="demo-color-swatch-label">$primary-light</span></div>
     <div class="u-mt++ epsilon demo-text--gray caps u-mb+">Selection Palette</div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.select-default}}"></span><span class="demo-color-swatch-label">$select-default</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.select-hover}}"></span><span class="demo-color-swatch-label">$select-hover</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.select-pressed}}"></span><span class="demo-color-swatch-label">$select-pressed</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.select-light}}"></span><span class="demo-color-swatch-label">$select-light</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch select-default"></span><span class="demo-color-swatch-label">$select-default</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch select-hover"></span><span class="demo-color-swatch-label">$select-hover</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch select-pressed"></span><span class="demo-color-swatch-label">$select-pressed</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch select-light"></span><span class="demo-color-swatch-label">$select-light</span></div>
     <div class="u-mt++ epsilon demo-text--gray caps u-mb+"><strong>Dark </strong>Actionable Palette</div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.d-actionable-default}}"></span><span class="demo-color-swatch-label">$d-actionable-default</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.d-actionable-hover}}"></span><span class="demo-color-swatch-label">$d-actionable-hover</span></div>
-    <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{colors.d-actionable-pressed}}"></span><span class="demo-color-swatch-label">$d-actionable-pressed</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch d-actionable-default"></span><span class="demo-color-swatch-label">$d-actionable-default</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch d-actionable-hover"></span><span class="demo-color-swatch-label">$d-actionable-hover</span></div>
+    <div class="demo-color-swatch--container"><span class="demo-color-swatch d-actionable-pressed"></span><span class="demo-color-swatch-label">$d-actionable-pressed</span></div>
   </div>  <!-- item -->
 
 </div> <!-- layout -->
@@ -159,39 +126,39 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
   <div class="layout layout--huge">
     <div class="layout__item">
       <div class="u-mb u-mt+ demo-text--gray caps">Regular Set</div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue5}}"></span><span class="demo-color-swatch-label">$blue5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange5}}"></span><span class="demo-color-swatch-label">$orange5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green5}}"></span><span class="demo-color-swatch-label">$green5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink4}}"></span><span class="demo-color-swatch-label">$pink4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown6}}"></span><span class="demo-color-swatch-label">$brown6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple4}}"></span><span class="demo-color-swatch-label">$purple4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow5}}"></span><span class="demo-color-swatch-label">$yellow5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red6}}"></span><span class="demo-color-swatch-label">$red6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray8}}"></span><span class="demo-color-swatch-label">$neutral-gray8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue5"></span><span class="demo-color-swatch-label">$blue5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange5"></span><span class="demo-color-swatch-label">$orange5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green5"></span><span class="demo-color-swatch-label">$green5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink4"></span><span class="demo-color-swatch-label">$pink4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown6"></span><span class="demo-color-swatch-label">$brown6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple4"></span><span class="demo-color-swatch-label">$purple4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow5"></span><span class="demo-color-swatch-label">$yellow5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red6"></span><span class="demo-color-swatch-label">$red6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray8"></span><span class="demo-color-swatch-label">$neutral-gray8</span></div>
     </div> <!-- item -->
     <div class="layout__item">
       <div class="u-mb u-mt+ demo-text--gray caps">Light Set</div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue3}}"></span><span class="demo-color-swatch-label">$blue3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange3}}"></span><span class="demo-color-swatch-label">$orange3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green3}}"></span><span class="demo-color-swatch-label">$green3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink2}}"></span><span class="demo-color-swatch-label">$pink2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown4}}"></span><span class="demo-color-swatch-label">$brown4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple3}}"></span><span class="demo-color-swatch-label">$purple3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow3}}"></span><span class="demo-color-swatch-label">$yellow3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red3}}"></span><span class="demo-color-swatch-label">$red3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray5}}"></span><span class="demo-color-swatch-label">$neutral-gray5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue3"></span><span class="demo-color-swatch-label">$blue3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange3"></span><span class="demo-color-swatch-label">$orange3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green3"></span><span class="demo-color-swatch-label">$green3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink2"></span><span class="demo-color-swatch-label">$pink2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown4"></span><span class="demo-color-swatch-label">$brown4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple3"></span><span class="demo-color-swatch-label">$purple3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow3"></span><span class="demo-color-swatch-label">$yellow3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red3"></span><span class="demo-color-swatch-label">$red3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray5"></span><span class="demo-color-swatch-label">$neutral-gray5</span></div>
     </div> <!-- item -->
     <div class="layout__item">
       <div class="u-mb u-mt+ demo-text--gray caps">Dark Set</div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue7}}"></span><span class="demo-color-swatch-label">$blue7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange7}}"></span><span class="demo-color-swatch-label">$orange7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green7}}"></span><span class="demo-color-swatch-label">$green7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink6}}"></span><span class="demo-color-swatch-label">$pink6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown7}}"></span><span class="demo-color-swatch-label">$brown7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple7}}"></span><span class="demo-color-swatch-label">$purple7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow7}}"></span><span class="demo-color-swatch-label">$yellow7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red7}}"></span><span class="demo-color-swatch-label">$red7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray10}}"></span><span class="demo-color-swatch-label">$neutral-gray10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue7"></span><span class="demo-color-swatch-label">$blue7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange7"></span><span class="demo-color-swatch-label">$orange7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green7"></span><span class="demo-color-swatch-label">$green7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink6"></span><span class="demo-color-swatch-label">$pink6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown7"></span><span class="demo-color-swatch-label">$brown7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple7"></span><span class="demo-color-swatch-label">$purple7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow7"></span><span class="demo-color-swatch-label">$yellow7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red7"></span><span class="demo-color-swatch-label">$red7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray10"></span><span class="demo-color-swatch-label">$neutral-gray10</span></div>
     </div> <!-- item -->
   </div>  <!-- layout -->
 </div>
@@ -201,206 +168,206 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
   <div class="layout layout--huge">
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps">Orange</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange1}}"></span><span class="demo-color-swatch-label">$orange1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange2}}"></span><span class="demo-color-swatch-label">$orange2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange3}}"></span><span class="demo-color-swatch-label">$orange3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange4}}"></span><span class="demo-color-swatch-label">$orange4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange5}}"></span><span class="demo-color-swatch-label">$orange5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange6}}"></span><span class="demo-color-swatch-label">$orange6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange7}}"></span><span class="demo-color-swatch-label">$orange7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange8}}"></span><span class="demo-color-swatch-label">$orange8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange9}}"></span><span class="demo-color-swatch-label">$orange9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.orange10}}"></span><span class="demo-color-swatch-label">$orange10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange1"></span><span class="demo-color-swatch-label">$orange1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange2"></span><span class="demo-color-swatch-label">$orange2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange3"></span><span class="demo-color-swatch-label">$orange3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange4"></span><span class="demo-color-swatch-label">$orange4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange5"></span><span class="demo-color-swatch-label">$orange5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange6"></span><span class="demo-color-swatch-label">$orange6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange7"></span><span class="demo-color-swatch-label">$orange7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange8"></span><span class="demo-color-swatch-label">$orange8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange9"></span><span class="demo-color-swatch-label">$orange9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch orange10"></span><span class="demo-color-swatch-label">$orange10</span></div>
     </div> <!-- item -->
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps">Yellow</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow1}}"></span><span class="demo-color-swatch-label">$yellow1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow2}}"></span><span class="demo-color-swatch-label">$yellow2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow3}}"></span><span class="demo-color-swatch-label">$yellow3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow4}}"></span><span class="demo-color-swatch-label">$yellow4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow5}}"></span><span class="demo-color-swatch-label">$yellow5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow6}}"></span><span class="demo-color-swatch-label">$yellow6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow7}}"></span><span class="demo-color-swatch-label">$yellow7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow8}}"></span><span class="demo-color-swatch-label">$yellow8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow9}}"></span><span class="demo-color-swatch-label">$yellow9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow10}}"></span><span class="demo-color-swatch-label">$yellow10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow1"></span><span class="demo-color-swatch-label">$yellow1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow2"></span><span class="demo-color-swatch-label">$yellow2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow3"></span><span class="demo-color-swatch-label">$yellow3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow4"></span><span class="demo-color-swatch-label">$yellow4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow5"></span><span class="demo-color-swatch-label">$yellow5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow6"></span><span class="demo-color-swatch-label">$yellow6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow7"></span><span class="demo-color-swatch-label">$yellow7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow8"></span><span class="demo-color-swatch-label">$yellow8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow9"></span><span class="demo-color-swatch-label">$yellow9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow10"></span><span class="demo-color-swatch-label">$yellow10</span></div>
     </div> <!-- item -->
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps">Yellow-Green</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow-green1}}"></span><span class="demo-color-swatch-label">$yellow-green1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow-green2}}"></span><span class="demo-color-swatch-label">$yellow-green2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow-green3}}"></span><span class="demo-color-swatch-label">$yellow-green3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow-green4}}"></span><span class="demo-color-swatch-label">$yellow-green4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow-green5}}"></span><span class="demo-color-swatch-label">$yellow-green5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow-green6}}"></span><span class="demo-color-swatch-label">$yellow-green6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow-green7}}"></span><span class="demo-color-swatch-label">$yellow-green7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow-green8}}"></span><span class="demo-color-swatch-label">$yellow-green8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow-green9}}"></span><span class="demo-color-swatch-label">$yellow-green9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.yellow-green10}}"></span><span class="demo-color-swatch-label">$yellow-green10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow-green1"></span><span class="demo-color-swatch-label">$yellow-green1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow-green2"></span><span class="demo-color-swatch-label">$yellow-green2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow-green3"></span><span class="demo-color-swatch-label">$yellow-green3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow-green4"></span><span class="demo-color-swatch-label">$yellow-green4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow-green5"></span><span class="demo-color-swatch-label">$yellow-green5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow-green6"></span><span class="demo-color-swatch-label">$yellow-green6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow-green7"></span><span class="demo-color-swatch-label">$yellow-green7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow-green8"></span><span class="demo-color-swatch-label">$yellow-green8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow-green9"></span><span class="demo-color-swatch-label">$yellow-green9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch yellow-green10"></span><span class="demo-color-swatch-label">$yellow-green10</span></div>
     </div> <!-- item -->
   </div> <!-- layout -->
   <div class="layout">
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb u-mb"><span class="demo-text--gray caps u-mb">Green</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green1}}"></span><span class="demo-color-swatch-label">$green1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green2}}"></span><span class="demo-color-swatch-label">$green2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green3}}"></span><span class="demo-color-swatch-label">$green3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green4}}"></span><span class="demo-color-swatch-label">$green4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green5}}"></span><span class="demo-color-swatch-label">$green5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green6}}"></span><span class="demo-color-swatch-label">$green6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green7}}"></span><span class="demo-color-swatch-label">$green7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green8}}"></span><span class="demo-color-swatch-label">$green8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green9}}"></span><span class="demo-color-swatch-label">$green9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.green10}}"></span><span class="demo-color-swatch-label">$green10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green1"></span><span class="demo-color-swatch-label">$green1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green2"></span><span class="demo-color-swatch-label">$green2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green3"></span><span class="demo-color-swatch-label">$green3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green4"></span><span class="demo-color-swatch-label">$green4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green5"></span><span class="demo-color-swatch-label">$green5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green6"></span><span class="demo-color-swatch-label">$green6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green7"></span><span class="demo-color-swatch-label">$green7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green8"></span><span class="demo-color-swatch-label">$green8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green9"></span><span class="demo-color-swatch-label">$green9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch green10"></span><span class="demo-color-swatch-label">$green10</span></div>
     </div> <!-- item -->
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps u-mb">Teal</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.teal1}}"></span><span class="demo-color-swatch-label">$teal1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.teal2}}"></span><span class="demo-color-swatch-label">$teal2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.teal3}}"></span><span class="demo-color-swatch-label">$teal3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.teal4}}"></span><span class="demo-color-swatch-label">$teal4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.teal5}}"></span><span class="demo-color-swatch-label">$teal5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.teal6}}"></span><span class="demo-color-swatch-label">$teal6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.teal7}}"></span><span class="demo-color-swatch-label">$teal7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.teal8}}"></span><span class="demo-color-swatch-label">$teal8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.teal9}}"></span><span class="demo-color-swatch-label">$teal9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.teal10}}"></span><span class="demo-color-swatch-label">$teal10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch teal1"></span><span class="demo-color-swatch-label">$teal1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch teal2"></span><span class="demo-color-swatch-label">$teal2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch teal3"></span><span class="demo-color-swatch-label">$teal3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch teal4"></span><span class="demo-color-swatch-label">$teal4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch teal5"></span><span class="demo-color-swatch-label">$teal5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch teal6"></span><span class="demo-color-swatch-label">$teal6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch teal7"></span><span class="demo-color-swatch-label">$teal7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch teal8"></span><span class="demo-color-swatch-label">$teal8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch teal9"></span><span class="demo-color-swatch-label">$teal9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch teal10"></span><span class="demo-color-swatch-label">$teal10</span></div>
     </div> <!-- item -->
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps u-mb">Aqua</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.aqua1}}"></span><span class="demo-color-swatch-label">$aqua1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.aqua2}}"></span><span class="demo-color-swatch-label">$aqua2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.aqua3}}"></span><span class="demo-color-swatch-label">$aqua3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.aqua4}}"></span><span class="demo-color-swatch-label">$aqua4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.aqua5}}"></span><span class="demo-color-swatch-label">$aqua5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.aqua6}}"></span><span class="demo-color-swatch-label">$aqua6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.aqua7}}"></span><span class="demo-color-swatch-label">$aqua7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.aqua8}}"></span><span class="demo-color-swatch-label">$aqua8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.aqua9}}"></span><span class="demo-color-swatch-label">$aqua9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.aqua10}}"></span><span class="demo-color-swatch-label">$aqua10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch aqua1"></span><span class="demo-color-swatch-label">$aqua1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch aqua2"></span><span class="demo-color-swatch-label">$aqua2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch aqua3"></span><span class="demo-color-swatch-label">$aqua3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch aqua4"></span><span class="demo-color-swatch-label">$aqua4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch aqua5"></span><span class="demo-color-swatch-label">$aqua5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch aqua6"></span><span class="demo-color-swatch-label">$aqua6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch aqua7"></span><span class="demo-color-swatch-label">$aqua7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch aqua8"></span><span class="demo-color-swatch-label">$aqua8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch aqua9"></span><span class="demo-color-swatch-label">$aqua9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch aqua10"></span><span class="demo-color-swatch-label">$aqua10</span></div>
     </div> <!-- item -->
   </div> <!-- layout -->
   <div class="layout layout--huge">
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps u-mb">Cyan</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.cyan1}}"></span><span class="demo-color-swatch-label">$cyan1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.cyan2}}"></span><span class="demo-color-swatch-label">$cyan2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.cyan3}}"></span><span class="demo-color-swatch-label">$cyan3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.cyan4}}"></span><span class="demo-color-swatch-label">$cyan4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.cyan5}}"></span><span class="demo-color-swatch-label">$cyan5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.cyan6}}"></span><span class="demo-color-swatch-label">$cyan6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.cyan7}}"></span><span class="demo-color-swatch-label">$cyan7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.cyan8}}"></span><span class="demo-color-swatch-label">$cyan8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.cyan9}}"></span><span class="demo-color-swatch-label">$cyan9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.cyan10}}"></span><span class="demo-color-swatch-label">$cyan10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch cyan1"></span><span class="demo-color-swatch-label">$cyan1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch cyan2"></span><span class="demo-color-swatch-label">$cyan2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch cyan3"></span><span class="demo-color-swatch-label">$cyan3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch cyan4"></span><span class="demo-color-swatch-label">$cyan4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch cyan5"></span><span class="demo-color-swatch-label">$cyan5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch cyan6"></span><span class="demo-color-swatch-label">$cyan6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch cyan7"></span><span class="demo-color-swatch-label">$cyan7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch cyan8"></span><span class="demo-color-swatch-label">$cyan8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch cyan9"></span><span class="demo-color-swatch-label">$cyan9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch cyan10"></span><span class="demo-color-swatch-label">$cyan10</span></div>
     </div> <!-- item -->
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps u-mb">Blue</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue1}}"></span><span class="demo-color-swatch-label">$blue1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue2}}"></span><span class="demo-color-swatch-label">$blue2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue3}}"></span><span class="demo-color-swatch-label">$blue3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue4}}"></span><span class="demo-color-swatch-label">$blue4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue5}}"></span><span class="demo-color-swatch-label">$blue5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue6}}"></span><span class="demo-color-swatch-label">$blue6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue7}}"></span><span class="demo-color-swatch-label">$blue7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue8}}"></span><span class="demo-color-swatch-label">$blue8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue9}}"></span><span class="demo-color-swatch-label">$blue9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.blue10}}"></span><span class="demo-color-swatch-label">$blue10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue1"></span><span class="demo-color-swatch-label">$blue1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue2"></span><span class="demo-color-swatch-label">$blue2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue3"></span><span class="demo-color-swatch-label">$blue3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue4"></span><span class="demo-color-swatch-label">$blue4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue5"></span><span class="demo-color-swatch-label">$blue5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue6"></span><span class="demo-color-swatch-label">$blue6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue7"></span><span class="demo-color-swatch-label">$blue7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue8"></span><span class="demo-color-swatch-label">$blue8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue9"></span><span class="demo-color-swatch-label">$blue9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch blue10"></span><span class="demo-color-swatch-label">$blue10</span></div>
     </div> <!-- item -->
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps u-mb">Violet</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.violet1}}"></span><span class="demo-color-swatch-label">$violet1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.violet2}}"></span><span class="demo-color-swatch-label">$violet2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.violet3}}"></span><span class="demo-color-swatch-label">$violet3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.violet4}}"></span><span class="demo-color-swatch-label">$violet4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.violet5}}"></span><span class="demo-color-swatch-label">$violet5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.violet6}}"></span><span class="demo-color-swatch-label">$violet6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.violet7}}"></span><span class="demo-color-swatch-label">$violet7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.violet8}}"></span><span class="demo-color-swatch-label">$violet8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.violet9}}"></span><span class="demo-color-swatch-label">$violet9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.violet10}}"></span><span class="demo-color-swatch-label">$violet10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch violet1"></span><span class="demo-color-swatch-label">$violet1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch violet2"></span><span class="demo-color-swatch-label">$violet2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch violet3"></span><span class="demo-color-swatch-label">$violet3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch violet4"></span><span class="demo-color-swatch-label">$violet4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch violet5"></span><span class="demo-color-swatch-label">$violet5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch violet6"></span><span class="demo-color-swatch-label">$violet6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch violet7"></span><span class="demo-color-swatch-label">$violet7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch violet8"></span><span class="demo-color-swatch-label">$violet8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch violet9"></span><span class="demo-color-swatch-label">$violet9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch violet10"></span><span class="demo-color-swatch-label">$violet10</span></div>
     </div> <!-- item -->
   </div> <!-- layout -->
   <div class="layout layout--huge">
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps u-mb">Purple</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple1}}"></span><span class="demo-color-swatch-label">$purple1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple2}}"></span><span class="demo-color-swatch-label">$purple2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple3}}"></span><span class="demo-color-swatch-label">$purple3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple4}}"></span><span class="demo-color-swatch-label">$purple4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple5}}"></span><span class="demo-color-swatch-label">$purple5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple6}}"></span><span class="demo-color-swatch-label">$purple6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple7}}"></span><span class="demo-color-swatch-label">$purple7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple8}}"></span><span class="demo-color-swatch-label">$purple8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple9}}"></span><span class="demo-color-swatch-label">$purple9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.purple10}}"></span><span class="demo-color-swatch-label">$purple10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple1"></span><span class="demo-color-swatch-label">$purple1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple2"></span><span class="demo-color-swatch-label">$purple2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple3"></span><span class="demo-color-swatch-label">$purple3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple4"></span><span class="demo-color-swatch-label">$purple4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple5"></span><span class="demo-color-swatch-label">$purple5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple6"></span><span class="demo-color-swatch-label">$purple6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple7"></span><span class="demo-color-swatch-label">$purple7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple8"></span><span class="demo-color-swatch-label">$purple8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple9"></span><span class="demo-color-swatch-label">$purple9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch purple10"></span><span class="demo-color-swatch-label">$purple10</span></div>
     </div> <!-- item -->
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps u-mb">Pink</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink1}}"></span><span class="demo-color-swatch-label">$pink1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink2}}"></span><span class="demo-color-swatch-label">$pink2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink3}}"></span><span class="demo-color-swatch-label">$pink3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink4}}"></span><span class="demo-color-swatch-label">$pink4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink5}}"></span><span class="demo-color-swatch-label">$pink5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink6}}"></span><span class="demo-color-swatch-label">$pink6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink7}}"></span><span class="demo-color-swatch-label">$pink7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink8}}"></span><span class="demo-color-swatch-label">$pink8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink9}}"></span><span class="demo-color-swatch-label">$pink9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.pink10}}"></span><span class="demo-color-swatch-label">$pink10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink1"></span><span class="demo-color-swatch-label">$pink1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink2"></span><span class="demo-color-swatch-label">$pink2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink3"></span><span class="demo-color-swatch-label">$pink3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink4"></span><span class="demo-color-swatch-label">$pink4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink5"></span><span class="demo-color-swatch-label">$pink5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink6"></span><span class="demo-color-swatch-label">$pink6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink7"></span><span class="demo-color-swatch-label">$pink7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink8"></span><span class="demo-color-swatch-label">$pink8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink9"></span><span class="demo-color-swatch-label">$pink9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch pink10"></span><span class="demo-color-swatch-label">$pink10</span></div>
     </div> <!-- item -->
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps u-mb">Red</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red1}}"></span><span class="demo-color-swatch-label">$red1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red2}}"></span><span class="demo-color-swatch-label">$red2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red3}}"></span><span class="demo-color-swatch-label">$red3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red4}}"></span><span class="demo-color-swatch-label">$red4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red5}}"></span><span class="demo-color-swatch-label">$red5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red6}}"></span><span class="demo-color-swatch-label">$red6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red7}}"></span><span class="demo-color-swatch-label">$red7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red8}}"></span><span class="demo-color-swatch-label">$red8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red9}}"></span><span class="demo-color-swatch-label">$red9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.red10}}"></span><span class="demo-color-swatch-label">$red10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red1"></span><span class="demo-color-swatch-label">$red1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red2"></span><span class="demo-color-swatch-label">$red2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red3"></span><span class="demo-color-swatch-label">$red3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red4"></span><span class="demo-color-swatch-label">$red4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red5"></span><span class="demo-color-swatch-label">$red5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red6"></span><span class="demo-color-swatch-label">$red6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red7"></span><span class="demo-color-swatch-label">$red7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red8"></span><span class="demo-color-swatch-label">$red8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red9"></span><span class="demo-color-swatch-label">$red9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch red10"></span><span class="demo-color-swatch-label">$red10</span></div>
     </div> <!-- item -->
   </div> <!-- layout -->
   <div class="layout layout--huge">
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps u-mb">Brown</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown1}}"></span><span class="demo-color-swatch-label">$brown1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown2}}"></span><span class="demo-color-swatch-label">$brown2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown3}}"></span><span class="demo-color-swatch-label">$brown3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown4}}"></span><span class="demo-color-swatch-label">$brown4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown5}}"></span><span class="demo-color-swatch-label">$brown5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown6}}"></span><span class="demo-color-swatch-label">$brown6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown7}}"></span><span class="demo-color-swatch-label">$brown7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown8}}"></span><span class="demo-color-swatch-label">$brown8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown9}}"></span><span class="demo-color-swatch-label">$brown9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.brown10}}"></span><span class="demo-color-swatch-label">$brown10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown1"></span><span class="demo-color-swatch-label">$brown1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown2"></span><span class="demo-color-swatch-label">$brown2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown3"></span><span class="demo-color-swatch-label">$brown3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown4"></span><span class="demo-color-swatch-label">$brown4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown5"></span><span class="demo-color-swatch-label">$brown5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown6"></span><span class="demo-color-swatch-label">$brown6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown7"></span><span class="demo-color-swatch-label">$brown7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown8"></span><span class="demo-color-swatch-label">$brown8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown9"></span><span class="demo-color-swatch-label">$brown9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch brown10"></span><span class="demo-color-swatch-label">$brown10</span></div>
     </div> <!-- item -->
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps u-mb">Neutral Gray</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray1}}"></span><span class="demo-color-swatch-label">$neutral-gray1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray2}}"></span><span class="demo-color-swatch-label">$neutral-gray2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray3}}"></span><span class="demo-color-swatch-label">$neutral-gray3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray4}}"></span><span class="demo-color-swatch-label">$neutral-gray4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray5}}"></span><span class="demo-color-swatch-label">$neutral-gray5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray6}}"></span><span class="demo-color-swatch-label">$neutral-gray6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray7}}"></span><span class="demo-color-swatch-label">$neutral-gray7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray8}}"></span><span class="demo-color-swatch-label">$neutral-gray8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray9}}"></span><span class="demo-color-swatch-label">$neutral-gray9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.neutral-gray10}}"></span><span class="demo-color-swatch-label">$neutral-gray10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray1"></span><span class="demo-color-swatch-label">$neutral-gray1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray2"></span><span class="demo-color-swatch-label">$neutral-gray2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray3"></span><span class="demo-color-swatch-label">$neutral-gray3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray4"></span><span class="demo-color-swatch-label">$neutral-gray4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray5"></span><span class="demo-color-swatch-label">$neutral-gray5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray6"></span><span class="demo-color-swatch-label">$neutral-gray6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray7"></span><span class="demo-color-swatch-label">$neutral-gray7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray8"></span><span class="demo-color-swatch-label">$neutral-gray8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray9"></span><span class="demo-color-swatch-label">$neutral-gray9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch neutral-gray10"></span><span class="demo-color-swatch-label">$neutral-gray10</span></div>
     </div> <!-- item -->
     <div class="u-mt++ u-mb++ layout__item">
       <div class="demo-color-swatch--container u-mb"><span class="demo-text--gray caps u-mb">Salmon</span><span class="demo-color-swatch-label"></span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.salmon1}}"></span><span class="demo-color-swatch-label">$salmon1</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.salmon2}}"></span><span class="demo-color-swatch-label">$salmon2</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.salmon3}}"></span><span class="demo-color-swatch-label">$salmon3</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.salmon4}}"></span><span class="demo-color-swatch-label">$salmon4</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.salmon5}}"></span><span class="demo-color-swatch-label">$salmon5</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.salmon6}}"></span><span class="demo-color-swatch-label">$salmon6</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.salmon7}}"></span><span class="demo-color-swatch-label">$salmon7</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.salmon8}}"></span><span class="demo-color-swatch-label">$salmon8</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.salmon9}}"></span><span class="demo-color-swatch-label">$salmon9</span></div>
-      <div class="demo-color-swatch--container"><span class="demo-color-swatch" style$="background-color:{{dataVisColors.salmon10}}"></span><span class="demo-color-swatch-label">$salmon10</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch salmon1"></span><span class="demo-color-swatch-label">$salmon1</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch salmon2"></span><span class="demo-color-swatch-label">$salmon2</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch salmon3"></span><span class="demo-color-swatch-label">$salmon3</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch salmon4"></span><span class="demo-color-swatch-label">$salmon4</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch salmon5"></span><span class="demo-color-swatch-label">$salmon5</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch salmon6"></span><span class="demo-color-swatch-label">$salmon6</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch salmon7"></span><span class="demo-color-swatch-label">$salmon7</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch salmon8"></span><span class="demo-color-swatch-label">$salmon8</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch salmon9"></span><span class="demo-color-swatch-label">$salmon9</span></div>
+      <div class="demo-color-swatch--container"><span class="demo-color-swatch salmon10"></span><span class="demo-color-swatch-label">$salmon10</span></div>
     </div> <!-- item -->
   </div> <!-- layout -->
 
@@ -416,7 +383,6 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
 <script>
   Polymer({
     is: 'local-element-demo',
-    behaviors: [commonColors],
 
     attached : function(){
       var boundHandler = this._handleOptionsUpdated.bind(this);
@@ -436,7 +402,7 @@ var dvPink = dataVisColors.properties.dataVisColors.value.dv-basic-pink;
     },
 
     _importCode : function() {
-      return '@import "px-colors-design/_settings.colors.scss";';
+      return '@import "px-colors-design/_settings.scss";';
     },
 
   });
