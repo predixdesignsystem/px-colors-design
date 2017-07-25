@@ -1,6 +1,6 @@
 # px-colors-design
 
-The px-colors-design module assigns Sass variables to the Px color palette.
+The Predix UI Colors module assigns Sass variables to the Px color palette.
 
 ## Installation
 
@@ -31,3 +31,5 @@ And add the variable as a behavior
         ...
       });
     </script>
+
+View the full API [here](http://predixdev.github.io/px-colors-design/)
