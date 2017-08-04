@@ -1,3 +1,7 @@
+v1.0.3
+==================
+* dynamic theme switching
+
 v1.0.2
 ==================
 * fixing up the demo and docs
