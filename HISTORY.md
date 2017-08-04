@@ -1,3 +1,7 @@
+v1.0.4
+==================
+* https
+
 v1.0.3
 ==================
 * dynamic theme switching
