@@ -35,6 +35,24 @@ $inuit-enable-layout--huge : true;
 @import "px-layout-design/_objects.layout.scss";
 
 // Component
+
+.demo-color-swatch {
+  margin-right: 10px;
+  height: 30px;
+  padding-left: 8px;
+  flex: 1 0 auto;
+}
+.demo-color-swatch-label {
+  width: 140px;
+  text-align: left;
+}
+.demo-color-swatch--container {
+  line-height: 30px;
+  height: 30px;
+  white-space: nowrap;
+  display: flex;
+}
+
 .black                { background-color: rgb(0,0,0); }
 .gray20               { background-color: rgb(5,9,12); }
 .gray19               { background-color: rgb(12,20,25); }
@@ -238,7 +256,6 @@ $inuit-enable-layout--huge : true;
 .salmon8              { background-color: rgb(157,108,78); }
 .salmon9              { background-color: rgb(129,89,64); }
 .salmon10             { background-color: rgb(101,70,50); }
-
 
 // Trumps
 @import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";

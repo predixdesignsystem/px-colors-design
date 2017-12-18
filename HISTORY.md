@@ -1,3 +1,7 @@
+v1.0.6
+==================
+* Upgrade docs to use Polymer 2.x, bump px-demo and px-sass-doc dependencies
+
 v1.0.5
 ==================
 * fixed typo

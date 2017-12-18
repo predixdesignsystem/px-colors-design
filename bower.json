@@ -1,6 +1,6 @@
 {
   "name": "px-colors-design",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "authors": [
     "General Electric"
   ],
@@ -30,11 +30,11 @@
   ],
   "devDependencies": {
     "px-starter-kit-design": "^1.0.0",
-    "px-sass-doc": "^1.0.0",
+    "px-sass-doc": "^2.0.0",
     "px-dark-theme": "^2.0.0",
     "px-dark-demo-theme": "^2.0.0",
     "px-layout-design": "^1.0.0",
-    "px-demo": "^2.2.0"
+    "px-demo": "^3.0.0"
   },
   "resolutions": {
     "webcomponentsjs": "^0.7.24"
