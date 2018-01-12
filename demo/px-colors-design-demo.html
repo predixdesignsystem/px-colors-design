@@ -361,6 +361,9 @@ background-color: $black;
       </section>
 
 </px-sass-doc>
+
+<px-clipboard id="clippy" style="display: none;"></px-clipboard>
+
 </template>
 
 </dom-module>
@@ -370,13 +373,24 @@ background-color: $black;
   Polymer({
     is: 'px-colors-design-demo',
 
+    listeners: {
+      'click': '_copyColor'
+    },
+
+
+
     attached : function(){
-      var boundHandler = this._handleOptionsUpdated.bind(this);
-      this.addEventListener('px-sass-doc-options-updated', boundHandler)
+      this.boundHandler = this._handleOptionsUpdated.bind(this);
+      this.addEventListener('px-sass-doc-options-updated', this.boundHandler);
+      this.boundCopyColor = this._copyColor.bind(this);
+      Polymer.dom(this.root).querySelector('.markdown-html').addEventListener('click', this.boundCopyColor);
+
     },
 
     detached : function(){
-      this.removeEventListener('px-sass-doc-options-updated', boundHandler);
+      this.removeEventListener('px-sass-doc-options-updated', this.boundHandler);
+      Polymer.dom(this.root).querySelector('.markdown-html').removeEventListener('click', this.boundCopyColor);
+
     },
 
     _handleOptionsUpdated : function(evt) {
@@ -390,6 +404,18 @@ background-color: $black;
     _importCode : function() {
       return '@import "px-colors-design/_settings.scss";';
     },
+
+    _copyColor: function(evt) {
+      var ne = Polymer.dom(evt);
+      if(ne.rootTarget.classList.contains('demo-color-swatch')) {
+        var color = window.getComputedStyle(ne.rootTarget)['backgroundColor'];
+
+        this.$.clippy.dataClipboardText = color;
+        Polymer.dom(this.$.clippy.root)
+          .querySelector('px-icon')
+          .dispatchEvent(new CustomEvent('click'));
+      }
+    }
 
   });
 </script>
