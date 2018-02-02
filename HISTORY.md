@@ -1,3 +1,7 @@
+v1.0.8
+==================
+* fix demo for new site build process
+
 v1.0.7
 ==================
 * Added click to copy color in demo
