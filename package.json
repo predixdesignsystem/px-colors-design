@@ -1,15 +1,19 @@
 {
-  "name": "@predix-ui/px-colors-design",
-  "version": "1.0.8",
   "description": "Default color variables for Predix UI",
-  "private": false,
-  "flat": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "keywords": [
+    "sass",
+    "px",
+    "colors"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/PredixDev/px-colors-design.git"
+  },
+  "homepage": "https://github.com/PredixDev/px-colors-design.git",
+  "name": "@predix-ui/px-colors-design",
+  "version": "1.0.8",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "General Electric",
   "devDependencies": {
@@ -33,5 +37,12 @@
     "stream-combiner2": "^1.1.1",
     "yargs": "^6.0.0"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "resolutions": {
+    "inherits": "2.0.3",
+    "samsam": "1.1.3",
+    "supports-color": "3.1.2",
+    "type-detect": "1.0.0"
+  },
+  "dependencies": {}
 }
